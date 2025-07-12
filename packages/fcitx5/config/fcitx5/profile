@@ -1,0 +1,19 @@
+[GroupOrder]
+0=Groupe 1
+
+[Groups/0]
+Default Layout=fr-azerty
+DefaultIM=pinyin
+Name=Groupe 1
+
+[Groups/0/Items/0]
+Layout=
+Name=keyboard-fr-azerty
+
+[Groups/0/Items/1]
+Layout=
+Name=unikey
+
+[Groups/0/Items/2]
+Layout=
+Name=pinyin

@@ -1,0 +1,10 @@
+memoria := justfile_directory()
+
+[private]
+default:
+    @just --list --unsorted
+
+cat-in-clouds:
+    @nix-build {{ memoria }}/cat-in-clouds -A config.system.build.vm --no-allow-import-from-derivation --show-trace
+    @./result/bin/run-*
+    @rm result

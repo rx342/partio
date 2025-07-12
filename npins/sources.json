@@ -1,0 +1,37 @@
+{
+  "pins": {
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre920165.f665af0cdb70/nixexprs.tar.xz",
+      "hash": "sha256-enBX1DxL9cttnrJ+rzOds/GXWqSj/vcB97+X9mgiJho="
+    },
+    "nvim-rx": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rx342",
+        "repo": "nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "d0b2c0883570f05ae7692046d89e63410025ff22",
+      "url": "https://github.com/rx342/nvim/archive/d0b2c0883570f05ae7692046d89e63410025ff22.tar.gz",
+      "hash": "sha256-BOQX2QAfbZQVyTETeUh1aktsJPKgJIrwlbIJizKwNdc="
+    },
+    "wrapper-manager": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "viperML",
+        "repo": "wrapper-manager"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "801dd9c876fcada046af45543e8c7e0bbccf20ea",
+      "url": "https://github.com/viperML/wrapper-manager/archive/801dd9c876fcada046af45543e8c7e0bbccf20ea.tar.gz",
+      "hash": "sha256-OGXsTE5jWhGiFfK6OwMvjksrYSobsIFUSUzKsexCDxY="
+    }
+  },
+  "version": 7
+}

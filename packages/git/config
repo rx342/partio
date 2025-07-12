@@ -1,0 +1,122 @@
+[alias]
+    a = "add"
+    alias = "config --get-regexp ^alias."
+    ap = "add -p"
+    b = "branch"
+    cc = "commit -v"
+    co = "checkout"
+    d = "diff"
+    dl = "clone --depth=1"
+    ll = "log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+    mr = "mergetool"
+    nuke = "clean -dxf"
+    p = "push"
+    pf = "push --force"
+    pfn = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git push --force origin $branch~$1:$branch; }; f"
+    pn = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git push origin $branch~$1:$branch; }; f"
+    pp = "push --force-with-lease"
+    ppn = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git push --force-with-lease origin $branch~$1:$branch; }; f"
+    r = "rebase"
+    ra = "rebase --abort"
+    ri = "rebase -i"
+    rl = "reflog --date=relative"
+    rr = "rebase --continue"
+    rs = "rebase --skip"
+    rt = "restore"
+    sh = "show"
+    st = "status"
+    sw = "switch"
+    u = "pull"
+    ur = "pull --rebase"
+    uri = "pull --rebase=interactive"
+    zd = "stash drop"
+    zl = "stash list"
+    zp = "stash pop"
+    zz = "stash"
+
+[apply]
+    whitespace = "warn"
+
+[branch]
+    sort = "committerdate"
+
+[color]
+    grep = "auto"
+
+[color "branch"]
+    current = "blue reverse bold"
+    local = "blue"
+    remote = "yellow"
+
+[color "diff"]
+    frag = "blue bold"
+    meta = "yellow bold"
+    new = "green bold"
+    old = "red bold"
+
+[color "status"]
+    added = "blue bold"
+    changed = "yellow"
+    untracked = "red"
+
+[core]
+    editor = "nvim"
+    pager = "delta"
+
+[credential]
+    helper = "store"
+
+[delta]
+    navigate = true
+    syntax-theme = "ansi"
+
+[diff]
+    algorithm = "histogram"
+    colorMoved = true
+    ignoreSubmodules = "dirty"
+
+[feature]
+    experimental = true
+
+[filter "lfs"]
+    clean = "git-lfs clean -- %f"
+    process = "git-lfs filter-process"
+    required = true
+    smudge = "git-lfs smudge -- %f"
+
+[grep]
+    patternType = "perl"
+
+[init]
+    defaultBranch = "main"
+
+[interactive]
+    diffFilter = "delta --color-only"
+
+[merge]
+    conflictstyle = "zdiff3"
+    prompt = false
+    tool = "nvim"
+
+[mergetool]
+    keepBackup = false
+    prompt = false
+
+[mergetool "nvim"]
+    cmd = "nvim $MERGED"
+
+[push]
+    default = "simple"
+
+[rebase]
+    autosquash = true
+    autostash = true
+    instructionFormat = "(%an <%ae>) %s"
+    updateRefs = true
+
+[rerere]
+    enabled = true
+
+[user]
+    email = "15484682+rx342@users.noreply.github.com"
+    name = "rx342"

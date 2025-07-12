@@ -1,0 +1,4 @@
+--italic-text=always
+--pager='less -RFI'
+--style=plain
+--theme=ansi

@@ -1,0 +1,9 @@
+cpu_count_from_one=1
+fields=0 48 17 18 38 39 40 2 46 47 49 1
+highlight_base_name=1
+highlight_megabytes=1
+highlight_threads=1
+left_meter_modes=1 1 1 1 1
+left_meters=LeftCPUs4 Memory Swap DiskIO NetworkIO
+right_meter_modes=1 1 2 2 2
+right_meters=RightCPUs4 CPU LoadAverage Systemd Uptime

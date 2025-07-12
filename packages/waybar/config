@@ -1,0 +1,115 @@
+{
+    "layer": "top",
+    "position": "left",
+    "modules-left": [
+        "niri/workspaces"
+    ],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/appearance", "custom/dnd", "pulseaudio", "cpu", "memory", "battery", "tray", "privacy"],
+    "custom/logout": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "niri msg action quit"
+    },
+    "niri/workspaces": {
+        "all-outputs": true,
+        "disable-markup": false,
+        "disable-scroll": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "10": "零",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九"
+        },
+        "sort-by-number": true
+    },
+    "niri/window": {
+        "separate-outputs": true,
+        "icon": true,
+        "icon-size": 16,
+    },
+    "niri/language": {
+        "format": "{shortDescription}",
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "tooltip-format": "{title} | {app_id}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "fullscreen"
+    },
+    "custom/appearance": {
+      "exec": "get-appearance-module",
+      "format": "{}",
+      "interval": 1,
+      "on-click": "set-appearance-module",
+      "tooltip": false,
+      "justify": "center"
+    },
+    "custom/dnd": {
+      "exec": "get-dnd-module",
+      "format": "{}",
+      "interval": 1,
+      "on-click": "set-dnd-module",
+      "return-type": "json",
+      "tooltip": false,
+      "justify": "center"
+    },
+    "pulseaudio": {
+      "format": "{icon}",
+      "format-icons": {
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "format-muted": "󰖁",
+      "on-click": "pamixer --toggle-mute",
+      "scroll-step": 1,
+      "tooltip": false,
+      "justify": "center"
+    },
+    "tray": {
+      "spacing": 10,
+      "justify": "center"
+    },
+    "clock": {
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%a\n%e\n\n■\n\n<b>%H\n%M</b>}",
+      "justify": "center"
+    },
+    "cpu": {
+      "format": "",
+      "justify": "center"
+    },
+    "memory": {
+      "format": "",
+      "justify": "center"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}",
+        "format-charging": "{capacity}",
+        "format-plugged": "{capacity}",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "justify": "center"
+    },
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 14,
+        "transition-duration": 250,
+        "justify": "center"
+    },
+}

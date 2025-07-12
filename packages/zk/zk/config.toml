@@ -1,0 +1,20 @@
+[alias]
+book = "zk new --template ~/zk_notes/.zk/templates/book.md --title \"$argv\""
+journal = "zk new -W ~/zk_notes/journal --group journal"
+paper = "zk new --template ~/zk_notes/.zk/templates/paper.md --title \"$argv\""
+work = "zk new -W ~/zk_notes/work --title \"$argv\""
+
+[extra]
+author = "rx"
+
+["lsp.diagnostics"]
+dead-link = "error"
+wiki-title = "hint"
+
+[note]
+id-case = "lower"
+language = "fr"
+
+[tool]
+fzf-preview = "bat -p --color always {-1}"
+pager = "bat"
