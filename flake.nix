@@ -11,5 +11,9 @@
         partio = import ./partio.nix { inherit system; };
         default = self.packages.${system}.partio;
       };
+
+      overlays = {
+        default = ./overlays/default.nix;
+      };
     };
 }
