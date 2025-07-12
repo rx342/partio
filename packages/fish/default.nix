@@ -45,7 +45,6 @@ in
 {
   wrappers.fish = {
     basePackage = pkgs.fish;
-    wrapperType = "shell";
     programs.fish = {
       wrapFlags = [
         "--prefix"
