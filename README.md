@@ -1,5 +1,7 @@
 # 👜 Partio
 
+![what you could have right now by using part](.github/assets/screenshot.png)
+
 This is a subset of my dotfiles that is public.
 This serves two purposes:
 
