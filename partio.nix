@@ -43,5 +43,8 @@ wrapper-manager.lib.wrapWith pkgs {
     fzf
     fd
     ripgrep
+    zoxide
+    direnv
+    yazi
   ];
 }
