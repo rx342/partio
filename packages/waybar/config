@@ -1,0 +1,160 @@
+[
+  {
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon} {percent}%",
+      "format-icons": [
+        "󰹐 ",
+        "󱩐 ",
+        "󱩓 ",
+        "󰛨 "
+      ],
+      "on-scroll-down": "light -U 5",
+      "on-scroll-up": "light -A 5"
+    },
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-charging": "󰂄 {capacity}%",
+      "format-full": "{icon} {capacity}%",
+      "format-icons": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂"
+      ],
+      "interval": 10,
+      "states": {
+        "critical": 10,
+        "warning": 20
+      },
+      "tooltip": false
+    },
+    "clock": {
+      "format": "{:%H:%M}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "cpu": {
+      "format": "  {usage}%",
+      "interval": 30
+    },
+    "custom/appearance": {
+      "exec": "get-appearance-module",
+      "format": " {}",
+      "interval": 1,
+      "on-click": "set-appearance-module",
+      "tooltip": false
+    },
+    "custom/clock": {
+      "format": "󰥔",
+      "interval": 1,
+      "tooltip": false
+    },
+    "custom/date": {
+      "exec": "date '+%-d %B'",
+      "format": "  {}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "custom/launcher": {
+      "format": " ",
+      "tooltip": false
+    },
+    "custom/power-profile": {
+      "exec": "get-power-profile-module",
+      "format": " {}",
+      "interval": 1,
+      "on-click": "set-power-profile-module",
+      "return-type": "json",
+      "tooltip": false
+    },
+    "custom/powermenu": {
+      "format": " ",
+      "tooltip": false
+    },
+    "custom/spotify-position": {
+      "exec": "spotify-module",
+      "format": "  {}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "memory": {
+      "format": "  {percentage}%",
+      "interval": 30,
+      "states": {
+        "warning": 85
+      }
+    },
+    "modules-center": [
+      "custom/clock",
+      "clock"
+    ],
+    "modules-left": [
+      "sway/workspaces",
+      "custom/appearance",
+      "custom/power-profile",
+      "tray"
+    ],
+    "modules-right": [
+      "custom/spotify-position",
+      "pulseaudio",
+      "memory",
+      "cpu",
+      "custom/date"
+    ],
+    "network": {
+      "format-disconnected": "󰤮  Disconnected",
+      "format-ethernet": "󰈀 {ifname} ~ {ipaddr}",
+      "format-linked": "󰤩  {essid} [No IP]",
+      "format-wifi": "  {essid}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-icons": {
+        "default": [
+          " ",
+          " ",
+          "  "
+        ]
+      },
+      "format-muted": "󰖁 Muted",
+      "on-click": "pamixer -t",
+      "scroll-step": 1,
+      "tooltip": false
+    },
+    "sway/workspaces": {
+      "all-outputs": true,
+      "disable-markup": false,
+      "disable-scroll": true,
+      "format": " {icon} ",
+      "format-icons": {
+        "1": "一",
+        "10": "零",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九"
+      },
+      "sort-by-number": true
+    },
+    "temperature": {
+      "format": " {temperatureC}°C",
+      "tooltip": false
+    },
+    "tray": {
+      "icon-size": 15,
+      "spacing": 5
+    }
+  }
+]

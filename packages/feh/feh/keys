@@ -1,0 +1,18 @@
+delete C-d C-Delete
+menu_child l Right
+menu_down j Down
+menu_parent h Left
+menu_select space Return
+menu_up k Up
+next_img J Right space
+prev_img K Left BackSpace
+remove d Delete
+scroll_down j C-Down
+scroll_left h C-Left
+scroll_right l C-Right
+scroll_up k C-Up
+toggle_filenames f
+zoom_default d
+zoom_fit s
+zoom_in C-Up i
+zoom_out C-Down o
