@@ -1,9 +1,8 @@
 # 👜 Partio
 
-![what you could have right now by using part](.github/assets/screenshot.png)
+![what you could have right now by using partio](.github/assets/screenshot.png)
 
-This is a subset of my dotfiles that is public.
-This serves two purposes:
+This is a subset of my dotfiles that serves two purposes:
 
 - I do not want to share all of my dotfiles since I may leak secrets, but still want to share some stuff
 - I can use this as a **portable** config: since everything is wrapped I can just invoke it with `nix` and have my minimal config everywhere
