@@ -1,5 +1,6 @@
 let
   source = import ../npins;
+  nvim-rx = import source.nvim-rx { };
   wrapper-manager = import source.wrapper-manager;
   wrapped =
     pkgs:
@@ -49,5 +50,6 @@ in
     rofi-wayland = wrapped-with-pkgs.config.wrappers.rofi-wayland.wrapped;
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
+    neovim = nvim-rx.nvim;
   };
 }
