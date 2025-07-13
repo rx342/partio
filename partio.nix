@@ -2,41 +2,22 @@
   system ? builtins.currentSystem,
   source ? import ./npins,
   pkgs ? import source.nixpkgs {
-    overlays = [ ];
+    overlays = [ (import ./overlays/default.nix) ];
     config = { };
     inherit system;
   },
   wrapper-manager ? import source.wrapper-manager,
-  nvim-rx ? import source.nvim-rx { inherit system; },
 }:
 
-let
-  wrapped-packages =
-    (wrapper-manager.lib {
-      inherit pkgs;
-      modules = [
-        ./packages/htop/default.nix
-        ./packages/bat/default.nix
-        ./packages/zk/default.nix
-        ./packages/eza/default.nix
-        ./packages/git/default.nix
-        ./packages/tmux/default.nix
-      ];
-    }).config.build.toplevel;
-
-  fish-wrapped =
-    (wrapper-manager.lib {
-      inherit pkgs;
-      modules = [
-        ./packages/fish/default.nix
-      ];
-    }).config.wrappers.fish.wrapped;
-in
 wrapper-manager.lib.wrapWith pkgs {
-  basePackage = fish-wrapped;
+  basePackage = pkgs.rx342.fish;
   pathAdd = with pkgs; [
-    wrapped-packages
-    nvim-rx.nvim
+    rx342.htop
+    rx342.bat
+    rx342.eza
+    rx342.git
+    rx342.tmux
+    rx342.neovim
     nix-output-monitor
     just
     npins
