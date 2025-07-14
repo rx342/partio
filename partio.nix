@@ -11,6 +11,9 @@
 
 wrapper-manager.lib.wrapWith pkgs {
   basePackage = pkgs.rx342.fish;
+  overrideAttrs = old: {
+    pname = "partio";
+  };
   pathAdd = with pkgs; [
     rx342.htop
     rx342.bat
