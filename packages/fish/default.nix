@@ -45,6 +45,9 @@ in
 {
   wrappers.fish = {
     basePackage = pkgs.fish;
+    overrideAttrs = old: {
+      pname = "${old.pname}-rx342";
+    };
     programs.fish = {
       wrapFlags = [
         "--prefix"

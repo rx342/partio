@@ -3,6 +3,9 @@
 {
   wrappers.waybar = {
     basePackage = pkgs.waybar;
+    overrideAttrs = old: {
+      pname = "${old.pname}-rx342";
+    };
     prependFlags = [
       "--config=${./config}"
       "--style=${./style.css}"

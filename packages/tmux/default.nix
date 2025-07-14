@@ -10,6 +10,9 @@ in
 {
   wrappers.tmux = {
     basePackage = pkgs.tmux;
+    overrideAttrs = old: {
+      pname = "${old.pname}-rx342";
+    };
     prependFlags = [
       "-f"
       (pkgs.writeText "tmux-conf" ''

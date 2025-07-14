@@ -3,6 +3,9 @@
 {
   wrappers.wezterm = {
     basePackage = pkgs.wezterm;
+    overrideAttrs = old: {
+      pname = "${old.pname}-rx342";
+    };
     env.WEZTERM_CONFIG_FILE = {
       value =
         pkgs.writeText "wezterm.lua"
