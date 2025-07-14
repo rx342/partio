@@ -5,8 +5,6 @@ let
   partio = import ../partio.nix { inherit (pkgs) system; };
 in
 {
-  nix.nixPath = [ "nixpkgs=/etc/nixos/nixpkgs" ];
-
   nix.settings = {
     experimental-features = [
       "nix-command"
