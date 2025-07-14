@@ -1,6 +1,5 @@
 let
   source = import ../npins;
-  nvim-rx = import source.nvim-rx { };
   wrapper-manager = import source.wrapper-manager;
   wrapped =
     pkgs:
@@ -30,6 +29,7 @@ in
 final: prev:
 let
   wrapped-with-pkgs = wrapped prev;
+  nvim-rx = import source.nvim-rx { inherit (prev) system; };
 in
 {
   rx342 = {
