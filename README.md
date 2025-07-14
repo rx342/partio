@@ -50,6 +50,23 @@ environment.systemPackages = with pkgs.rx342; [
 ];
 ```
 
+### Binary cache
+
+There is a binary cache you can use
+
+```nix
+nix = {
+  settings = {
+    substituters = [
+      "https://partio.cachix.org"
+    ];
+    trusted-public-keys = [
+      "partio.cachix.org-1:W8w3kE6/UOLs0dg1kxCDYvllNVsaBFbNBofVR+wYhrw="
+    ];
+  };
+};
+```
+
 ## Credits
 
 - [viperML/wrapper-manager](https://github.com/viperML/wrapper-manager)
