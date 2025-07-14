@@ -13,7 +13,7 @@
       };
 
       overlays = {
-        default = ./overlays/default.nix;
+        default = import ./overlays/default.nix;
       };
     };
 }
