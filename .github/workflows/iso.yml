@@ -1,0 +1,39 @@
+name: Release install ISO
+
+on:
+  schedule:
+    - cron: '0 0 1 */2 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+
+      - name: Install cachix
+        uses: cachix/cachix-action@v16
+        with:
+          name: partio
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+
+      - name: Build iso
+        run: nix-shell ../../shell.nix --run "just create"
+
+      - name: Make release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          today=$(date +'%Y-%m-%d')
+          gh release create "$today"
+          gh release upload "$today" ./result/iso/*.iso
