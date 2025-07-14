@@ -16,6 +16,7 @@ jobs:
       - name: Maximize build space
         uses: easimon/maximize-build-space@v10
         with:
+          overprovision-lvm: true
           remove-dotnet: true
           remove-android: true
           remove-codeql: true
