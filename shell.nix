@@ -12,7 +12,6 @@ pkgs.mkShellNoCC {
   packages = with pkgs; [
     caligula
     just
-    nix-output-monitor
     qemu
   ];
 }

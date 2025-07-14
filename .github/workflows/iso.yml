@@ -28,7 +28,7 @@ jobs:
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
       - name: Build iso
-        run: nix-shell shell.nix --run "just create"
+        run: nix-shell -p just --run "just create"
 
       - name: Make release
         env:
