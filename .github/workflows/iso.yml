@@ -29,6 +29,9 @@ jobs:
       - uses: cachix/install-nix-action@v31
         with:
           nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            trusted-public-keys = partio.cachix.org-1:W8w3kE6/UOLs0dg1kxCDYvllNVsaBFbNBofVR+wYhrw= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://partio.cachix.org https://cache.nixos.org/
 
       - name: Install cachix
         uses: cachix/cachix-action@v16
