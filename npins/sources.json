@@ -1,17 +1,5 @@
 {
   "pins": {
-    "lix": {
-      "type": "Tarball",
-      "url": "https://git.lix.systems/lix-project/lix/archive/2.93.2.tar.gz",
-      "locked_url": "https://git.lix.systems/api/v1/repos/lix-project/lix/archive/22be6ff62626c8cdbb9cdb59a3e4bd910fedd0d6.tar.gz?rev=22be6ff62626c8cdbb9cdb59a3e4bd910fedd0d6",
-      "hash": "10pr6xp2m3fmnhywakv9msb33gllkr85qi0bl40wlgn7hlp9r317"
-    },
-    "lix-module": {
-      "type": "Tarball",
-      "url": "https://git.lix.systems/lix-project/nixos-module/archive/2.93.2-1.tar.gz",
-      "locked_url": "https://git.lix.systems/api/v1/repos/lix-project/nixos-module/archive/8b1094356f4723d6e89d3f8a95b333ee16d9ab02.tar.gz?rev=8b1094356f4723d6e89d3f8a95b333ee16d9ab02",
-      "hash": "01dxjdwniql8rjrxq3wd5y48ybvnhygwn1qkml01jgb33abh0xa9"
-    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
