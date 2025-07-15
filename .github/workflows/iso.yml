@@ -47,5 +47,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           today=$(date +'%Y-%m-%d')
-          gh release create "$today"
+          gh release create "$today" --title "$today" --notes ""
           gh release upload "$today" ./result/iso/*.iso
