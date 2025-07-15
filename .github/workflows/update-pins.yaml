@@ -35,7 +35,6 @@ jobs:
           commit-message: "chore: update npins"
           body-path: update.log
           branch: update-npins
-          token: ${{ secrets.GITHUB_TOKEN }}
 
   build:
     runs-on: ubuntu-latest
