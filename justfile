@@ -5,9 +5,14 @@ default:
     @just --list --unsorted
 
 # Build partio
-[group("partio")]
-build:
+[group("utils")]
+partio:
     @nix-build {{ partio }}/partio.nix --no-allow-import-from-derivation
+
+# Build all wrapped packages
+[group("utils")]
+build:
+    @nix-build {{ partio }}/packages/all-packages.nix --no-allow-import-from-derivation
 
 # Create install ISO
 [group("iso")]
