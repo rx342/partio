@@ -69,6 +69,6 @@ jobs:
         run: nix-shell -p just --run "just build"
 
       - name: Merge Pull Request
-        run: gh pr merge --rebase --auto --delete-branch "${{ needs.update-npins.outputs.pr-url }}"
+        run: gh pr merge --merge --auto --delete-branch "${{ needs.update-npins.outputs.pr-url }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
