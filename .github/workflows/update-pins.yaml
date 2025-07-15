@@ -27,13 +27,19 @@ jobs:
           nix-shell -p npins --run "npins upgrade"
           nix-shell -p npins --run "npins update" > update.log 2>&1
 
+      - name: Prepare PR body with code block
+        run: |
+          echo '```' > pr_body.md
+          cat update.log >> pr_body.md
+          echo '```' >> pr_body.md
+
       - name: Create Pull request
         uses: peter-evans/create-pull-request@v7
         id: pr
         with:
           title: "chore: update npins"
           commit-message: "chore: update npins"
-          body-path: update.log
+          body-path: pr_body.md
           branch: update-npins
 
   build:
