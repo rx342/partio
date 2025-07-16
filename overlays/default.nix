@@ -25,6 +25,7 @@ let
         ../packages/swaylock/default.nix
         ../packages/i3/default.nix
         ../packages/dunst/default.nix
+        ../packages/fcitx5/default.nix
       ];
     };
 in
@@ -57,6 +58,7 @@ in
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
     i3 = wrapped-with-pkgs.config.wrappers.i3.wrapped;
     dunst = wrapped-with-pkgs.config.wrappers.dunst.wrapped;
+    fcitx5 = wrapped-with-pkgs.config.wrappers.fcitx5.wrapped;
     neovim = nvim-rx.nvim;
   };
 }
