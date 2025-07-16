@@ -23,6 +23,7 @@ let
         ../packages/rofi/wayland.nix
         ../packages/waybar/default.nix
         ../packages/swaylock/default.nix
+        ../packages/i3/default.nix
       ];
     };
 in
@@ -53,6 +54,7 @@ in
     rofi-monitor = prev.callPackage ../packages/rofi-monitor/default.nix { };
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
+    i3 = wrapped-with-pkgs.config.wrappers.i3.wrapped;
     neovim = nvim-rx.nvim;
   };
 }
