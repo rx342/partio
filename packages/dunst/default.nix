@@ -3,7 +3,6 @@
 {
   wrappers.dunst = {
     basePackage = pkgs.dunst;
-    wrapperType = "shell";
     overrideAttrs = old: {
       pname = "${old.pname}-rx342";
     };
