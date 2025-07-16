@@ -24,6 +24,7 @@ let
         ../packages/waybar/default.nix
         ../packages/swaylock/default.nix
         ../packages/i3/default.nix
+        ../packages/dunst/default.nix
       ];
     };
 in
@@ -55,6 +56,7 @@ in
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
     i3 = wrapped-with-pkgs.config.wrappers.i3.wrapped;
+    dunst = wrapped-with-pkgs.config.wrappers.dunst.wrapped;
     neovim = nvim-rx.nvim;
   };
 }
