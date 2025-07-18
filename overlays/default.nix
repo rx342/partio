@@ -27,6 +27,7 @@ let
         ../packages/dunst/default.nix
         ../packages/fcitx5/default.nix
         ../packages/sway/default.nix
+        ../packages/swaync/default.nix
       ];
     };
 in
@@ -62,6 +63,7 @@ in
     fcitx5 = wrapped-with-pkgs.config.wrappers.fcitx5.wrapped;
     sway = wrapped-with-pkgs.config.wrappers.sway.wrapped;
     swayfx = wrapped-with-pkgs.config.wrappers.swayfx.wrapped;
+    swaynotificationcenter = wrapped-with-pkgs.config.wrappers.swaynotificationcenter.wrapped;
     neovim = nvim-rx.nvim;
   };
 }

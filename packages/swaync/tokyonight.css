@@ -1,0 +1,197 @@
+@define-color base00 #16161e; @define-color base01 #1a1b26; @define-color base02 #2f3549; @define-color base03 #444b6a;
+@define-color base04 #787c99; @define-color base05 #787c99; @define-color base06 #cbccd1; @define-color base07 #d5d6db;
+
+@define-color base08 #f7768e; @define-color base09 #ff9e64; @define-color base0A #e0af68; @define-color base0B #41a6b5;
+@define-color base0C #7dcfff; @define-color base0D #7aa2f7; @define-color base0E #bb9af7; @define-color base0F #d18616;
+
+* {
+    font-family: "Inter Display";
+    font-size: 11pt;
+}
+progress,
+progressbar,
+trough {
+  border: 1px solid @base0D;
+}
+
+trough {
+  background: @base01;
+}
+
+.notification.low {
+  border: 1px solid @base03;
+}
+
+.notification.low progress {
+  background: @base03;
+}
+
+.notification.normal {
+  border: 1px solid @base0D;
+}
+
+.notification.normal progress {
+  background: @base0F;
+}
+
+.notification.critical {
+  border: 1px solid @base08;
+}
+
+.notification.critical progress {
+  background: @base08;
+}
+
+.summary {
+  color: @base05;
+}
+
+.body {
+  color: @base06;
+}
+
+.time {
+  color: @base06;
+}
+
+.notification-action {
+  color: @base05;
+  background: @base01;
+}
+
+.notification-action:hover {
+  background: @base01;
+  color: @base05;
+}
+
+.notification-action:active {
+  background: @base0F;
+  color: @base05;
+}
+
+.close-button {
+  color: @base02;
+  background: @base08;
+}
+
+.close-button:hover {
+  background: lighter(@base08);
+  color: lighter(@base02);
+}
+
+.close-button:active {
+  background: @base08;
+  color: @base00;
+}
+
+.notification-content {
+  background: @base00;
+  border: 1px solid @base0D;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+  background: transparent;
+  color: @base05;
+}
+
+.notification-group .notification-group-buttons,
+.notification-group .notification-group-headers {
+  color: @base05;
+}
+
+.notification-group .notification-group-headers .notification-group-icon {
+  color: @base05;
+}
+
+.notification-group .notification-group-headers .notification-group-header {
+  color: @base05;
+}
+
+.notification-group.collapsed .notification-row .notification {
+  background: @base01;
+}
+
+.notification-group.collapsed:hover
+  .notification-row:not(:only-child)
+  .notification {
+  background: @base01;
+}
+
+.control-center {
+  background: @base00;
+  border: 1px solid @base0D;
+  color: @base05;
+}
+
+.control-center .notification-row .notification-background {
+  background: @base00;
+  color: @base05;
+}
+
+.control-center .notification-row .notification-background:hover {
+  background: @base00;
+  color: @base05;
+}
+
+.control-center .notification-row .notification-background:active {
+  background: @base0F;
+  color: @base05;
+}
+
+.widget-title {
+  color: @base05;
+  margin: 0.5rem;
+}
+
+.widget-title > button {
+  background: @base01;
+  border: 1px solid @base0D;
+  color: @base05;
+}
+
+.widget-title > button:hover {
+  background: @base01;
+}
+
+.widget-dnd {
+  color: @base05;
+}
+
+.widget-dnd > switch {
+  background: @base01;
+  border: 1px solid @base0D;
+}
+
+.widget-dnd > switch:hover {
+  background: @base01;
+}
+
+.widget-dnd > switch:checked {
+  background: @base0F;
+}
+
+.widget-dnd > switch slider {
+  background: @base06;
+}
+
+.widget-mpris {
+  color: @base05;
+}
+
+.widget-mpris .widget-mpris-player {
+  background: @base01;
+  border: 1px solid @base0D;
+}
+
+.widget-mpris .widget-mpris-player button:hover {
+  background: @base01;
+}
+
+.widget-mpris .widget-mpris-player > box > button {
+  border: 1px solid @base0D;
+}
+
+.widget-mpris .widget-mpris-player > box > button:hover {
+  background: @base01;
+  border: 1px solid @base0D;
+}
