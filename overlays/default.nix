@@ -19,8 +19,7 @@ let
         ../packages/translate-shell/default.nix
         ../packages/wezterm/default.nix
         ../packages/polybar/default.nix
-        ../packages/rofi/x11.nix
-        ../packages/rofi/wayland.nix
+        ../packages/rofi/default.nix
         ../packages/waybar/default.nix
         ../packages/swaylock/default.nix
         ../packages/i3/default.nix
