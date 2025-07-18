@@ -5,7 +5,7 @@
 This is a subset of my dotfiles that serves two purposes:
 
 - I do not want to share all of my dotfiles since I may leak secrets, but still want to share some stuff
-- I can use this as a **portable** config: since everything is wrapped I can just invoke it with `nix` and have my minimal config everywhere
+- I can use this as a portable config: since everything is wrapped I can just invoke it with `nix` and have my minimal config really quickly
 
 ## Usage
 
@@ -17,14 +17,14 @@ You can try it with
 nix run github:rx342/partio
 ```
 
-Note that because everything is packaged, your configuration files should not be altered in any way (or create an issue)!
+Note that because everything is wrapped, your configuration files should not be altered in any way (otherwise please [create an issue](https://github.com/rx342/partio/issues))!
 
 Since it is _personal_, it has some very opinionated options and should only be used temporarily (unless you want to have my identity and stuff on your computer).
 You can also check my wrapped `nvim` config: [rx342/nvim](https://github.com/rx342/nvim).
 
 ### Overlay
 
-If you like some of the wrapped packages, there is an overlay you could use to install them into your own dotfiles.
+This repository also exposes every packages so you can pull them easily via an overlay.
 
 ```nix
 # without flakes
@@ -40,7 +40,7 @@ pkgs = import nixpkgs {
 };
 ```
 
-and install the packages like the following
+and install packages like the following
 
 ```nix
 environment.systemPackages = with pkgs.rx342; [
