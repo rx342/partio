@@ -9,7 +9,7 @@ This is a subset of my dotfiles that serves two purposes:
 
 ## Usage
 
-### Quickstart
+### CLI
 
 You can try it with
 
@@ -19,12 +19,12 @@ nix run github:rx342/partio
 
 Note that because everything is wrapped, your configuration files should not be altered in any way (otherwise please [create an issue](https://github.com/rx342/partio/issues))!
 
-Since it is _personal_, it has some very opinionated options and should only be used temporarily (unless you want to have my identity and stuff on your computer).
+Since it is _personal_, it has some very opinionated options and should only be used temporarily (unless you want to have my identity, _e.g._ my git name & email, and other things on your computer).
 You can also check my wrapped `nvim` config: [rx342/nvim](https://github.com/rx342/nvim).
 
 ### Overlay
 
-This repository also exposes every packages so you can pull them easily via an overlay.
+This repository also exposes every wrapped packages so you can pull them easily via an overlay.
 
 ```nix
 # without flakes
@@ -72,3 +72,10 @@ nix = {
 - [viperML/wrapper-manager](https://github.com/viperML/wrapper-manager)
 - [viperML/dotfiles](https://github.com/viperML/dotfiles)
 - [sioodmy/andromeda](https://github.com/sioodmy/andromeda/tree/main)
+- [ifd3f/infra](https://github.com/ifd3f/infra)
+- [isabelroses/dotfiles](https://github.com/isabelroses/dotfiles)
+- [Ruixi-rebirth/flakes](https://github.com/Ruixi-rebirth/flakes)
+- [redyf/nixdots](https://github.com/redyf/nixdots)
+- [sioodmy/dotfiles](https://github.com/sioodmy/dotfiles)
+- [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
+- [wochap/nix-config](https://github.com/wochap/nix-config)
