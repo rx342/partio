@@ -1,5 +1,17 @@
 {
   "pins": {
+    "lix": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://git.lix.systems/lix-project/lix"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "9d8ab804355d95d38a61ad5053d415ca1882d554",
+      "url": null,
+      "hash": "1pyckmpykahjjg3d3s9zwhrxzrmvf56n7yh6njbg57d67m1h6nh8"
+    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
