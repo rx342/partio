@@ -1,6 +1,7 @@
 # cat in clouds
 
 ![screenshot](screenshot.png)
+![another one](bonus.png)
 
 | Module          | Name     | Package                   |
 | --------------- | -------- | ------------------------- |
