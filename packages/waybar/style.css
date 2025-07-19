@@ -134,6 +134,16 @@ tooltip label {
   margin-right: 4px;
   padding-right: 4px;
 }
+#custom-dnd.available {
+  color: #e0af68;
+  margin-right: 4px;
+  padding-right: 4px;
+}
+#custom-dnd.busy {
+  color: #f7768e;
+  margin-right: 4px;
+  padding-right: 4px;
+}
 #tray {
   margin-left: 5px;
   margin-right: 5px;

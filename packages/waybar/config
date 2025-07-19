@@ -73,6 +73,14 @@
       "return-type": "json",
       "tooltip": false
     },
+    "custom/dnd": {
+      "exec": "get-dnd-module",
+      "format": " {}",
+      "interval": 1,
+      "on-click": "set-dnd-module",
+      "return-type": "json",
+      "tooltip": false
+    },
     "custom/powermenu": {
       "format": " ",
       "tooltip": false
@@ -98,7 +106,8 @@
       "sway/workspaces",
       "custom/appearance",
       "custom/power-profile",
-      "tray"
+      "tray",
+      "custom/dnd"
     ],
     "modules-right": [
       "custom/spotify-position",
