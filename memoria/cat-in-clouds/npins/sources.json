@@ -1,0 +1,37 @@
+{
+  "pins": {
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixos-unstable",
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre826938.9807714d6944/nixexprs.tar.xz",
+      "hash": "0ypbzi9n23bm8g6ayfjx4qzniq5vajf5rkb504hbmbg0jxp0mqs4"
+    },
+    "partio": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rx342",
+        "repo": "partio"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "25b8092d5c5afed9ee592ec0f953f97653bed49c",
+      "url": "https://github.com/rx342/partio/archive/25b8092d5c5afed9ee592ec0f953f97653bed49c.tar.gz",
+      "hash": "084g0pd0g1vcbk7jpvy72nmylr3g2jxig9wmr95zq4sjdhx06rzh"
+    },
+    "wallpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "NotAShelf",
+        "repo": "wallpkgs"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "28c5d1b7d27e067888fe5db6485ef5d0acfb5140",
+      "url": "https://github.com/NotAShelf/wallpkgs/archive/28c5d1b7d27e067888fe5db6485ef5d0acfb5140.tar.gz",
+      "hash": "0zfsaifdnyy40z1b31dvd7aclihb7dckv7mqflv70sp8kykyj35a"
+    }
+  },
+  "version": 5
+}
