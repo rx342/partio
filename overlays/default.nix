@@ -64,6 +64,7 @@ in
     swayfx = wrapped-with-pkgs.config.wrappers.swayfx.wrapped;
     swaynotificationcenter = wrapped-with-pkgs.config.wrappers.swaynotificationcenter.wrapped;
     realise-symlink = prev.callPackage ../packages/realise-symlink/default.nix { };
+    lix = import ../packages/lix/default.nix { inherit (prev) system; };
     neovim = nvim-rx.nvim;
   };
 }
