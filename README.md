@@ -17,9 +17,12 @@ You can try it with
 nix run github:rx342/partio
 ```
 
+It will put you in a shell with my minimal config targeted for servers (_i.e._ no GUI custom config).
+
 Note that because everything is wrapped, your configuration files should not be altered in any way (otherwise please [create an issue](https://github.com/rx342/partio/issues))!
 
-Since it is _personal_, it has some very opinionated options and should only be used temporarily (unless you want to have my identity, _e.g._ my git name & email, and other things on your computer).
+Finally it is _personal_.
+It has some very opinionated options and should only be used temporarily (unless you want to have my identity, _e.g._ my git name & email, and other things on your computer).
 You can also check my wrapped `nvim` config: [rx342/nvim](https://github.com/rx342/nvim).
 
 ### Overlay
@@ -66,6 +69,10 @@ nix = {
   };
 };
 ```
+
+## Memoria
+
+In [memoria](./memoria), there is all my previous 🍙 with a virtual machine you can easily spawn.
 
 ## Credits
 
