@@ -7,6 +7,9 @@ This is a subset of my dotfiles that serves two purposes:
 - I do not want to share all of my dotfiles since I may leak secrets, but still want to share some stuff
 - I can use this as a portable config: since everything is wrapped I can just invoke it with `nix` and have my minimal config really quickly
 
+> [!NOTE]
+> This repository uses `nix` to wrap everything into a single package but if you just want to check the configuration files for each of them they are defined [here](./packages).
+
 ## Usage
 
 ### CLI
@@ -19,11 +22,11 @@ nix run github:rx342/partio
 
 It will put you in a shell with my minimal config targeted for servers (_i.e._ no GUI custom config).
 
-Note that because everything is wrapped, your configuration files should not be altered in any way (otherwise please [create an issue](https://github.com/rx342/partio/issues))!
+> [!NOTE]
+> Because everything is wrapped, your configuration files should not be altered in any way (otherwise please [create an issue](https://github.com/rx342/partio/issues))!
 
-Finally it is _personal_.
-It has some very opinionated options and should only be used temporarily (unless you want to have my identity, _e.g._ my git name & email, and other things on your computer).
-You can also check my wrapped `nvim` config: [rx342/nvim](https://github.com/rx342/nvim).
+> [!WARNING]
+> Recall that it is **personal**: it has some very opinionated options and should only be used temporarily (unless you want to have my identity, _e.g._ my git name & email, and other things on your computer).
 
 ### Overlay
 
