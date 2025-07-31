@@ -27,6 +27,12 @@ jobs:
           nix-shell -p npins --run "npins upgrade"
           nix-shell -p npins --run "npins update"
 
+      - uses: actions/create-github-app-token@v2
+        id: generate-token
+        with:
+          app-id: ${{ secrets.GH_APP_CLIENT_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
       - name: Create Pull request
         uses: peter-evans/create-pull-request@v7
         id: pr
@@ -35,3 +41,4 @@ jobs:
           commit-message: "chore: update npins"
           body: "Automated `npins` update."
           branch: update-npins
+          token: ${{ steps.generate-token.outputs.token }}
