@@ -77,6 +77,14 @@ nix = {
 
 In [memoria](./memoria), there is all my previous 🍙 with a virtual machine you can easily spawn.
 
+## Install ISO
+
+You can generate an `.iso` file with a minimal NixOS configuration that aims for installation.
+Please refer to the `justfile` recipe under the group `.iso`.
+
+> [!TIP]
+> Using GitHub Actions, it automatically builds the `.iso` and [release](https://github.com/rx342/partio/releases) it periodically.
+
 ## Credits
 
 - [viperML/wrapper-manager](https://github.com/viperML/wrapper-manager)
