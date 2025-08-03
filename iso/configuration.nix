@@ -1,9 +1,14 @@
 { lib, pkgs, ... }:
 
 let
+  inherit (import ../npins) lix lix-module;
   partio = import ../partio.nix { inherit (pkgs) system; };
 in
 {
+  imports = [
+    (import "${lix-module}/module.nix" { inherit lix; })
+  ];
+
   nix.settings = {
     experimental-features = [
       "nix-command"
