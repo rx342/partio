@@ -30,7 +30,7 @@ It will put you in a shell with my minimal config targeted for servers (_i.e._ n
 
 ### Overlay
 
-This repository also exposes every wrapped packages so you can pull them easily via an overlay.
+This repository also exposes all wrapped packages so you can pull them easily via an overlay.
 
 ```nix
 # without flakes
@@ -46,7 +46,7 @@ pkgs = import nixpkgs {
 };
 ```
 
-and install packages like the following
+and install packages
 
 ```nix
 environment.systemPackages = with pkgs.rx342; [
@@ -75,15 +75,15 @@ nix = {
 
 ## Memoria
 
-In [memoria](./memoria), there is all my previous 🍙 with a virtual machine you can easily spawn.
+[memoria](./memoria) directory contains all my previous 🍙 with a command to spawn a virtual machine.
 
 ## Install ISO
 
-You can generate an `.iso` file with a minimal NixOS configuration that aims for installation.
-Please refer to the `justfile` recipe under the group `.iso`.
+You can generate an `.iso` file with a minimal NixOS configuration designed for installation.
+Please refer to the `justfile` recipes under the group `iso`.
 
 > [!TIP]
-> Using GitHub Actions, it automatically builds the `.iso` and [release](https://github.com/rx342/partio/releases) it periodically.
+> GitHub Actions automatically builds and periodically [releases](https://github.com/rx342/partio/releases) the `.iso`.
 
 ## Credits
 
