@@ -1,4 +1,4 @@
-name: Release install ISO
+name: Create install ISO
 
 on:
   schedule:
@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  release:
+  iso:
     name: Create install ISO
     runs-on: ubuntu-latest
     steps:
