@@ -1,15 +1,18 @@
-name: Release install ISO
+name: Create install ISO
 
 on:
   schedule:
     - cron: '0 0 1 */2 *'
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'iso/**'
 
 permissions:
   contents: write
 
 jobs:
-  release:
+  iso:
     name: Create install ISO
     runs-on: ubuntu-latest
     steps:
@@ -39,10 +42,17 @@ jobs:
           name: partio
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
+      # https://git.lix.systems/lix-project/lix/issues/545#issuecomment-8412
+      - name: Fixes and hacks
+        run: |
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_unconfined=0
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+
       - name: Build iso
         run: nix-shell -p just --run "just create"
 
       - name: Make release
+        if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
