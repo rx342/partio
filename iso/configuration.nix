@@ -1,12 +1,17 @@
 { lib, pkgs, ... }:
 
 let
-  inherit (import ../npins) lix lix-module;
+  source = import ../npins;
+  inherit (source) lix-module;
+  lix = source.lix.outPath;
   partio = import ../partio.nix { inherit (pkgs) system; };
 in
 {
   imports = [
-    (import "${lix-module}/module.nix" { inherit lix; })
+    (import "${lix-module}/module.nix" {
+      inherit lix;
+      versionSuffix = "pre${builtins.substring 0 8 lix.lastModifiedDate}-${lix.shortRev}";
+    })
   ];
 
   nix.settings = {
