@@ -33,7 +33,6 @@ in
 final: prev:
 let
   wrapped-with-pkgs = wrapped prev;
-  nvim-rx = import source.nvim-rx { inherit (prev) system; };
 in
 {
   rx342 = {
@@ -65,6 +64,6 @@ in
     swaynotificationcenter = wrapped-with-pkgs.config.wrappers.swaynotificationcenter.wrapped;
     realise-symlink = prev.callPackage ../packages/realise-symlink/default.nix { };
     lix = import ../packages/lix/default.nix { inherit (prev) system; };
-    neovim = nvim-rx.nvim;
+    neovim = import ../packages/nvim/default.nix { inherit (prev) system; };
   };
 }
