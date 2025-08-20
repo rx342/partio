@@ -14,6 +14,11 @@ partio:
 build:
     @nix-build {{ partio }}/packages/all-packages.nix --no-allow-import-from-derivation
 
+# Clean repository
+[group("utils")]
+clean:
+    @rm -rf result*
+
 # Create install ISO
 [group("iso")]
 create:
