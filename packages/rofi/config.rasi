@@ -12,7 +12,7 @@ configuration {
     modi: "run,drun,window";
     show-icons: true;
     sidebar-mode: true;
-    terminal: "wezterm";
+    terminal: "ghostty";
     xoffset: 0;
     yoffset: 0;
 }
