@@ -18,6 +18,7 @@ let
         ../packages/feh/default.nix
         ../packages/translate-shell/default.nix
         ../packages/wezterm/default.nix
+        ../packages/ghostty/default.nix
         ../packages/polybar/default.nix
         ../packages/rofi/default.nix
         ../packages/waybar/default.nix
@@ -48,6 +49,7 @@ in
     feh = wrapped-with-pkgs.config.wrappers.feh.wrapped;
     translate-shell = wrapped-with-pkgs.config.wrappers.translate-shell.wrapped;
     wezterm = wrapped-with-pkgs.config.wrappers.wezterm.wrapped;
+    ghostty = wrapped-with-pkgs.config.wrappers.ghostty.wrapped;
     polybar = wrapped-with-pkgs.config.wrappers.polybar.wrapped;
     rofi = wrapped-with-pkgs.config.wrappers.rofi.wrapped;
     rofi-wayland = wrapped-with-pkgs.config.wrappers.rofi-wayland.wrapped;
