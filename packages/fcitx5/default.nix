@@ -2,7 +2,7 @@
 
 {
   wrappers.fcitx5 = {
-    basePackage = pkgs.libsForQt5.fcitx5-with-addons.override {
+    basePackage = pkgs.kdePackages.fcitx5-with-addons.override {
       addons = with pkgs; [
         fcitx5-unikey
         fcitx5-chinese-addons
