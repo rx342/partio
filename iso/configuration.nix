@@ -47,7 +47,10 @@ in
         isNormalUser = true;
         uid = 1000;
         home = "/home/soul";
-        extraGroups = [ "wheel" ];
+        extraGroups = [
+          "wheel"
+          "networkmanager"
+        ];
         shell = partio;
       };
     };
@@ -69,6 +72,8 @@ in
       workstation = true;
     };
   };
+
+  networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Paris";
   console.keyMap = "fr";
