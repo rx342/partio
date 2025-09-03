@@ -56,7 +56,7 @@
       "tooltip": false
     },
     "custom/date": {
-      "exec": "date '+%-d %B'",
+      "exec": "date '+%-d %b'",
       "format": "  {}",
       "interval": 1,
       "tooltip": false
