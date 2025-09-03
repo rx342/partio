@@ -114,7 +114,8 @@
       "pulseaudio",
       "memory",
       "cpu",
-      "custom/date"
+      "custom/date",
+      "battery"
     ],
     "network": {
       "format-disconnected": "󰤮  Disconnected",

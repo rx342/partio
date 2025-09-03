@@ -99,10 +99,10 @@ tooltip label {
   color: #cbccd1;
 }
 #battery.charging, #battery.full, #battery.discharging {
-  color: #cbccd1;
+  color: #bb9af7;
 }
 #battery.critical:not(.charging) {
-  color: #e0af68;
+  color: #f7768e;
 }
 #custom-powermenu {
   color: #e0af68;
