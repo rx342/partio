@@ -8,9 +8,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "f4bdddf0fdaabc68546cf561c5343b83d95d2466",
+      "revision": "91bf54d726cddd74d6ca34c6c01de2c9461cbe32",
       "url": null,
-      "hash": "0jhpzsij5lx2kmaf577av8yfqr7p1gx599d74ipnnx53yail6lhi"
+      "hash": "02c84cp6zv7hvy2r3wci5qziv9smb1xsbcmk552yfk9hslnmw6hh"
     },
     "lix-module": {
       "type": "Git",
@@ -27,8 +27,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre855444.aaff8c16d7fc/nixexprs.tar.xz",
-      "hash": "16yibd3f5n670ng36a6py957vk13rl1bpb55i2mxxxh00zjb236l"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre856744.ca7729638096/nixexprs.tar.xz",
+      "hash": "1g1zv36fs0sd7jk3z1b5yn4nrd578f1iy32a001za13mmllr0jrw"
     },
     "nvim-rx": {
       "type": "Git",
@@ -39,9 +39,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "3246197392e08673ee0e62f006ac7f7dc3e231c4",
-      "url": "https://github.com/rx342/nvim/archive/3246197392e08673ee0e62f006ac7f7dc3e231c4.tar.gz",
-      "hash": "02rswl72rwmf8riai9llv81vd8vmi3drx851acrpmxgb4g4jm2db"
+      "revision": "6ff15e43301647e992574ee6818e81069b47af0a",
+      "url": "https://github.com/rx342/nvim/archive/6ff15e43301647e992574ee6818e81069b47af0a.tar.gz",
+      "hash": "1bvyygq19l4s8p8wfw4y0c5nf09xs968nj9kbf0gh455n3nnn5ra"
     },
     "wrapper-manager": {
       "type": "Git",
@@ -52,9 +52,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "8ad2484b485acad0632cb0af15b5eb704e3c1d0a",
-      "url": "https://github.com/viperML/wrapper-manager/archive/8ad2484b485acad0632cb0af15b5eb704e3c1d0a.tar.gz",
-      "hash": "11kcrkrnajzbhbyg5w2jhy5h5dw3ffn604pm37ikyird5z2r37cy"
+      "revision": "801dd9c876fcada046af45543e8c7e0bbccf20ea",
+      "url": "https://github.com/viperML/wrapper-manager/archive/801dd9c876fcada046af45543e8c7e0bbccf20ea.tar.gz",
+      "hash": "05hg8bnb3jjc95a83c0v59hjnjwf5w1kpfpj2ni12nk39r6fqr9q"
     }
   },
   "version": 5
