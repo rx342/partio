@@ -18,7 +18,6 @@
         dnd-module = pkgs.callPackage ../dnd-module/default.nix { };
       in
       [
-        (pkgs.callPackage ../spotify-module/default.nix { })
         appearance-module.getter
         appearance-module.setter
         power-profile-module.getter
