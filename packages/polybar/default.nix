@@ -9,8 +9,5 @@
     prependFlags = [
       "--config=${./config.ini}"
     ];
-    pathAdd = [
-      (pkgs.callPackage ../spotify-module/default.nix { })
-    ];
   };
 }
