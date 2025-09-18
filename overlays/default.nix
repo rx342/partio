@@ -53,7 +53,6 @@ in
     ghostty-small = wrapped-with-pkgs.config.wrappers.ghostty-small.wrapped;
     polybar = wrapped-with-pkgs.config.wrappers.polybar.wrapped;
     rofi = wrapped-with-pkgs.config.wrappers.rofi.wrapped;
-    rofi-wayland = wrapped-with-pkgs.config.wrappers.rofi-wayland.wrapped;
     rofi-translate = prev.callPackage ../packages/rofi-translate/default.nix { };
     rofi-power-menu = prev.callPackage ../packages/rofi-power-menu/default.nix { };
     rofi-monitor = prev.callPackage ../packages/rofi-monitor/default.nix { };
