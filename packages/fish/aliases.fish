@@ -11,6 +11,7 @@ abbr --add -- b bat
 abbr --add -- cp 'cp -i'
 abbr --add -- du 'du -h'
 abbr --add -- e nvim
+abbr --add -- se sudoedit
 abbr --add -- g git
 abbr --add -- h tldr
 abbr --add -- j cd
