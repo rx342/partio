@@ -1,6 +1,6 @@
 # 👜 Partio
 
-![what you could have right now by using partio](./memoria/cat-in-clouds/screenshot.png)
+![what you could have right now by using partio](./.github/assets/current.png)
 
 This is a subset of my dotfiles that serves two purposes:
 
