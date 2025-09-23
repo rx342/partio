@@ -27,6 +27,7 @@ let
         ../packages/dunst/default.nix
         ../packages/fcitx5/default.nix
         ../packages/sway/default.nix
+        ../packages/niri/default.nix
         ../packages/swaync/default.nix
       ];
     };
@@ -62,6 +63,7 @@ in
     dunst = wrapped-with-pkgs.config.wrappers.dunst.wrapped;
     fcitx5 = wrapped-with-pkgs.config.wrappers.fcitx5.wrapped;
     sway = wrapped-with-pkgs.config.wrappers.sway.wrapped;
+    niri = wrapped-with-pkgs.config.wrappers.niri.wrapped;
     swayfx = wrapped-with-pkgs.config.wrappers.swayfx.wrapped;
     swaynotificationcenter = wrapped-with-pkgs.config.wrappers.swaynotificationcenter.wrapped;
     realise-symlink = prev.callPackage ../packages/realise-symlink/default.nix { };

@@ -1,5 +1,7 @@
 [
   {
+    "position": "top",
+    "height": 30,
     "backlight": {
       "device": "intel_backlight",
       "format": "{icon} {percent}%",
@@ -103,7 +105,7 @@
       "clock"
     ],
     "modules-left": [
-      "sway/workspaces",
+      "niri/workspaces",
       "custom/appearance",
       "custom/power-profile",
       "tray",
@@ -139,6 +141,25 @@
       "tooltip": false
     },
     "sway/workspaces": {
+      "all-outputs": true,
+      "disable-markup": false,
+      "disable-scroll": true,
+      "format": " {icon} ",
+      "format-icons": {
+        "1": "一",
+        "10": "零",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九"
+      },
+      "sort-by-number": true
+    },
+    "niri/workspaces": {
       "all-outputs": true,
       "disable-markup": false,
       "disable-scroll": true,
