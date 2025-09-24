@@ -59,6 +59,12 @@ layout {
     }
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waybar"
 spawn-sh-at-startup "swaybg -i ~/.local/share/wallpapers/home.png -m fill"
