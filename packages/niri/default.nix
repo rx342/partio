@@ -15,9 +15,7 @@
       pname = "${old.pname}-rx342";
     };
     pathAdd = with pkgs; [
-      grim
       playerctl
-      slurp
       swaybg
     ];
   };

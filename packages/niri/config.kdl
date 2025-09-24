@@ -80,7 +80,7 @@ hotkey-overlay {
 
 prefer-no-csd
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Downloads/%Y-%m-%d-%H-%M-%S.png"
 
 animations {
     // Uncomment to turn off all animations.
@@ -125,8 +125,6 @@ binds {
     Mod+colon hotkey-overlay-title="Emoji" { spawn-sh "bemoji --hist-limit 0 --private --noline"; }
     Mod+N hotkey-overlay-title="File browser" { spawn "thunar"; }
     Mod+P hotkey-overlay-title="Power management" { spawn "rofi-power-menu"; }
-    Mod+F3 hotkey-overlay-title="Full screenshot" { spawn-sh "grim - | wl-copy"; }
-    Mod+F4 hotkey-overlay-title="Partial screenshot" { spawn-sh "grim -g \"$(slurp)\" - | wl-copy"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pamixer -i 3"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "pamixer -d 3"; }
@@ -199,9 +197,9 @@ binds {
 
     Mod+V       { toggle-window-floating; }
 
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Mod+F3 { screenshot-screen; }
+    Mod+F4 { screenshot; }
+    Mod+F5 { screenshot-window; }
 
     Mod+Shift+E { quit; }
 }
