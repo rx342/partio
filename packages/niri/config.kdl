@@ -19,9 +19,9 @@ layout {
     gaps 16
     center-focused-column "always"
     preset-column-widths {
-        proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 0.75
     }
     default-column-width { proportion 0.5; }
     focus-ring {
@@ -67,9 +67,6 @@ spawn-at-startup "apple-music"
 spawn-sh-at-startup "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-at-startup "zen-beta"
 spawn-at-startup "ghostty"
-spawn-sh-at-startup "systemctl restart --user gammastep.service"
-spawn-sh-at-startup "systemctl restart --user fcitx5-daemon.service"
-spawn-sh-at-startup "systemctl restart --user swayidle.service"
 
 hotkey-overlay {
     skip-at-startup
@@ -98,7 +95,14 @@ window-rule {
 }
 
 window-rule {
+    match app-id="^com.mitchellh.ghostty"
+    match app-id="zen-beta"
+    default-column-width { proportion 0.66667; }
+}
+
+window-rule {
     match app-id="mpv"
+    match app-id="tv.plex.Plex"
     open-maximized true
 }
 
