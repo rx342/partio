@@ -2,15 +2,10 @@
 
 {
   wrappers.niri = {
-    basePackage = pkgs.niri.overrideAttrs (
-      final: prev: {
-        postPatch = ''
-          ${prev.postPatch or ""}
-          substituteInPlace resources/niri.service \
-            --replace-fail '/bin/niri' "/bin/niri --config ${./config.kdl}"
-        '';
-      }
-    );
+    basePackage = pkgs.niri;
+    env.NIRI_CONFIG = {
+      value = ./config.kdl;
+    };
     overrideAttrs = old: {
       pname = "${old.pname}-rx342";
     };
