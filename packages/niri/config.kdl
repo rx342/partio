@@ -118,6 +118,11 @@ window-rule {
     block-out-from "screencast"
 }
 
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
 layer-rule {
     match namespace="swaync-notification-window"
     match namespace="swaync-control-center"
