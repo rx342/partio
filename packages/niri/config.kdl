@@ -116,6 +116,7 @@ window-rule {
 window-rule {
     match app-id="signal"
     match app-id="ferdium"
+    match app-id="zen-beta" title="Zen Browser Private Browsing"
     block-out-from "screencast"
 }
 
