@@ -117,6 +117,7 @@ window-rule {
     match app-id="signal"
     match app-id="ferdium"
     match app-id="zen-beta" title="Zen Browser Private Browsing"
+    match app-id="org.gnome.Nautilus"
     block-out-from "screencast"
 }
 
@@ -160,7 +161,7 @@ binds {
     Mod+Space hotkey-overlay-title="Dismiss notifications" { spawn-sh "swaync-client -C"; }
     Mod+B hotkey-overlay-title="Translation" { spawn "rofi-translate"; }
     Mod+colon hotkey-overlay-title="Emoji" { spawn-sh "bemoji --hist-limit 0 --private --noline"; }
-    Mod+N hotkey-overlay-title="File browser" { spawn "thunar"; }
+    Mod+N hotkey-overlay-title="File browser" { spawn "nautilus"; }
     Mod+P hotkey-overlay-title="Power management" { spawn "rofi-power-menu"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pamixer -i 3"; }
