@@ -3,7 +3,9 @@
   source ? import ../npins,
   pkgs ? import source.nixpkgs {
     overlays = [ (import ../overlays/default.nix) ];
-    config = { };
+    config = {
+      allowUnfree = true;
+    };
     inherit system;
   },
 }:
