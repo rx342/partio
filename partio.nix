@@ -24,7 +24,6 @@ wrapper-manager.lib.wrapWith pkgs {
     nix-output-monitor
     just
     npins
-    fzf
     fd
     ripgrep
     zoxide

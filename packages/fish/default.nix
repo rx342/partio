@@ -37,6 +37,8 @@ let
           source ${./env.fish}
           source ${./aliases.fish}
 
+          fzf --fish | source
+
           set -gx STARSHIP_CONFIG ${../starship/starship.toml}
           starship init fish | source
         end
@@ -65,6 +67,7 @@ in
       pathAdd = [
         (pkgs.callPackage ../tmux/sessionizer/default.nix { })
         pkgs.starship
+        pkgs.fzf
       ];
     };
   };
