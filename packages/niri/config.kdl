@@ -195,6 +195,13 @@ binds {
     Mod+Shift+K     { move-window-to-workspace-up; }
     Mod+Shift+L     { move-column-right; }
 
+    Mod+comma  { focus-window-down; }
+    Mod+semicolon { focus-window-up; }
+    Mod+Shift+comma { move-window-down; }
+    Mod+Shift+semicolon { move-window-up; }
+    Mod+W { consume-or-expel-window-left; }
+    Mod+exclam { consume-or-expel-window-right; }
+
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
