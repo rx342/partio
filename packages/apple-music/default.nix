@@ -13,7 +13,7 @@ let
     ];
     text = # bash
       ''
-        chromium --user-data-dir="$HOME"/.local/share/chromium-apple-music --app=https://music.apple.com/fr
+        chromium --user-data-dir="$HOME"/.local/share/chromium-apple-music --app=https://beta.music.apple.com/fr
       '';
   };
   desktopItem = makeDesktopItem {
