@@ -39,9 +39,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "2cf1859191c69574a925db3c62a9804a28b7c0d4",
-      "url": "https://github.com/rx342/nvim/archive/2cf1859191c69574a925db3c62a9804a28b7c0d4.tar.gz",
-      "hash": "0afwcqixmy4anfxalrvh4vagv21hlvmfxjr4b8bg2hh5gwf7g99g"
+      "revision": "c6d68e6ba3412823d102343da7c9a4c008559855",
+      "url": "https://github.com/rx342/nvim/archive/c6d68e6ba3412823d102343da7c9a4c008559855.tar.gz",
+      "hash": "04f7l1p23nb8b21kssvj7c9kys3zyr9fzmrdgvkxmiq16labn8fl"
     },
     "wrapper-manager": {
       "type": "Git",
