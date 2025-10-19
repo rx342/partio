@@ -104,6 +104,7 @@ window-rule {
 window-rule {
     match app-id="^com.mitchellh.ghostty"
     match app-id="zen-beta"
+    match app-id="chrome-beta.music.apple.com__fr-Default"
     default-column-width { proportion 0.66667; }
 }
 
