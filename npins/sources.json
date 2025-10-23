@@ -8,9 +8,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "cac395ffbccbd0ebdbd6c7aa46f003a0be212112",
+      "revision": "253ed1cc05ff75703e36504244f210bc8af8e560",
       "url": null,
-      "hash": "1a6sf7s18xh89ff5qa87al2gkhhlh8zpr3y762998lnrqlcjdfc9"
+      "hash": "1wdxsqsvk65w06qwziqwagfn469f46pjgzcwn5qw9p2k99an99gy"
     },
     "lix-module": {
       "type": "Git",
@@ -27,8 +27,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre877938.82c2e0d6dde5/nixexprs.tar.xz",
-      "hash": "0n8nqgxk0rh53vk1ya3db1sxc68wdv98nh9zxbf274n5vhjajpmi"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre880602.cb82756ecc37/nixexprs.tar.xz",
+      "hash": "135p0bbpal4jw9wb3fb0b2wpfk9nxj9df8kd8yiwbhii3iniwkk6"
     },
     "nvim-rx": {
       "type": "Git",
@@ -39,9 +39,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "b99842aa250326e623a3fd96c1a9c93227bc15cb",
-      "url": "https://github.com/rx342/nvim/archive/b99842aa250326e623a3fd96c1a9c93227bc15cb.tar.gz",
-      "hash": "1ffc1l7gawg1vfg54dzdvwgzkpgc9xkdd3igslql27h0f9xr0il5"
+      "revision": "453ba9725a9c99c1b7f0dc76d840f8f6170f234a",
+      "url": "https://github.com/rx342/nvim/archive/453ba9725a9c99c1b7f0dc76d840f8f6170f234a.tar.gz",
+      "hash": "1wjrvdvpc6wgx7v4g2cld521aahgv6vdclvrr3prqrx143cacjqh"
     },
     "wrapper-manager": {
       "type": "Git",
