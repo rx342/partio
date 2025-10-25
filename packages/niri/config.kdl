@@ -145,6 +145,13 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id="zen-beta" title="^Picture-in-Picture$"
+    open-floating true
+    default-column-width { fixed 480; }
+    default-window-height { fixed 270; }
+}
+
 layer-rule {
     match namespace="swaync-notification-window"
     match namespace="swaync-control-center"
