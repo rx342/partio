@@ -29,5 +29,6 @@ wrapper-manager.lib.wrapWith pkgs {
     zoxide
     direnv
     yazi
+    nushell
   ];
 }
