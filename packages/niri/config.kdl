@@ -152,6 +152,11 @@ window-rule {
     default-window-height { fixed 270; }
 }
 
+window-rule {
+    match app-id="ZSTray"
+    open-floating false
+}
+
 layer-rule {
     match namespace="swaync-notification-window"
     match namespace="swaync-control-center"
