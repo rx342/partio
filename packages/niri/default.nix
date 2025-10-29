@@ -12,6 +12,7 @@
     pathAdd = with pkgs; [
       playerctl
       swaybg
+      (pkgs.callPackage ./dynamic-cast/default.nix { })
     ];
   };
 }
