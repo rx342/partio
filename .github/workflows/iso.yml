@@ -2,7 +2,7 @@ name: Create install ISO
 
 on:
   schedule:
-    - cron: '0 0 1 */2 *'
+    - cron: '0 0 1 * *'
   workflow_dispatch:
   pull_request:
     paths:
