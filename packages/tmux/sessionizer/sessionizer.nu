@@ -48,6 +48,9 @@ def main [ root?: path ] {
             let session_exist = (tmux has-session -t=$"($selected_name)" | complete | $in.exit_code) == 0
             if $session_exist {
                 tmux attach -d -t $selected_name
+            } else {
+                tmux new-session -s $selected_name -c $selected
+                exit 0
             }
         } else {
             tmux new-session -s $selected_name -c $selected
