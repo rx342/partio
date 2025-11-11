@@ -19,7 +19,6 @@ let
         ../packages/translate-shell/default.nix
         ../packages/wezterm/default.nix
         ../packages/ghostty/default.nix
-        ../packages/polybar/default.nix
         ../packages/rofi/default.nix
         ../packages/waybar/default.nix
         ../packages/swaylock/default.nix
@@ -51,7 +50,6 @@ in
     wezterm = wrapped-with-pkgs.config.wrappers.wezterm.wrapped;
     ghostty = wrapped-with-pkgs.config.wrappers.ghostty.wrapped;
     ghostty-small = wrapped-with-pkgs.config.wrappers.ghostty-small.wrapped;
-    polybar = wrapped-with-pkgs.config.wrappers.polybar.wrapped;
     rofi = wrapped-with-pkgs.config.wrappers.rofi.wrapped;
     rofi-translate = prev.callPackage ../packages/rofi-translate/default.nix { };
     rofi-power-menu = prev.callPackage ../packages/rofi-power-menu/default.nix { };
