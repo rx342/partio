@@ -249,6 +249,9 @@ binds {
     Mod+Shift+underscore { move-column-to-workspace 8; }
     Mod+Shift+ccedilla { move-column-to-workspace 9; }
 
+    Mod+S { focus-monitor-next; }
+    Mod+Shift+S { move-workspace-to-monitor-next; }
+
     Mod+R { switch-preset-column-width; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
