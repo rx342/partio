@@ -23,7 +23,6 @@ let
         ../packages/rofi/default.nix
         ../packages/waybar/default.nix
         ../packages/swaylock/default.nix
-        ../packages/i3/default.nix
         ../packages/dunst/default.nix
         ../packages/fcitx5/default.nix
         ../packages/sway/default.nix
@@ -59,7 +58,6 @@ in
     rofi-monitor = prev.callPackage ../packages/rofi-monitor/default.nix { };
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
-    i3 = wrapped-with-pkgs.config.wrappers.i3.wrapped;
     dunst = wrapped-with-pkgs.config.wrappers.dunst.wrapped;
     fcitx5 = wrapped-with-pkgs.config.wrappers.fcitx5.wrapped;
     sway = wrapped-with-pkgs.config.wrappers.sway.wrapped;
