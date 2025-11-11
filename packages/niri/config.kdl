@@ -251,6 +251,7 @@ binds {
 
     Mod+S { focus-monitor-next; }
     Mod+Shift+S { move-workspace-to-monitor-next; }
+    Mod+G { move-column-to-monitor-next; }
 
     Mod+R { switch-preset-column-width; }
     Mod+F { maximize-column; }
