@@ -55,7 +55,6 @@ in
     rofi = wrapped-with-pkgs.config.wrappers.rofi.wrapped;
     rofi-translate = prev.callPackage ../packages/rofi-translate/default.nix { };
     rofi-power-menu = prev.callPackage ../packages/rofi-power-menu/default.nix { };
-    rofi-monitor = prev.callPackage ../packages/rofi-monitor/default.nix { };
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
     dunst = wrapped-with-pkgs.config.wrappers.dunst.wrapped;
