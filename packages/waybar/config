@@ -136,7 +136,7 @@
         ]
       },
       "format-muted": "󰖁 Muted",
-      "on-click": "pamixer -t",
+      "on-click": "pamixer --toggle-mute",
       "scroll-step": 1,
       "tooltip": false
     },
