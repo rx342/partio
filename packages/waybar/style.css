@@ -54,9 +54,11 @@ tooltip label {
   margin-left: 8px;
   margin-right: 8px;
 }
-#mode, #custom-clock, #clock, #custom-date, #memory, #cpu, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu {
+#mode, #custom-clock, #clock, #custom-date, #memory, #cpu, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu, #tray, #privacy, #battery, #custom-appearance, #custom-power-profile, #custom-dnd {
   margin-left: 3px;
   margin-right: 3px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -120,45 +122,30 @@ tooltip label {
 }
 #custom-powermenu {
   color: #e0af68;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #custom-spotify-position {
   color: #f7768e;
-  margin-right: 4px;
-  padding-right: 4px;
+}
+#privacy {
+  color: #f7768e;
 }
 #custom-appearance {
   color: #bb9af7;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #custom-power-profile.perf {
   color: #f7768e;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #custom-power-profile.balanced {
   color: #e0af68;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #custom-power-profile.save {
   color: #41a6b5;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #custom-dnd.available {
   color: #e0af68;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #custom-dnd.busy {
   color: #f7768e;
-  margin-right: 4px;
-  padding-right: 4px;
 }
 #tray {
-  margin-left: 5px;
-  margin-right: 5px;
 }
