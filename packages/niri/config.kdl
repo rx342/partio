@@ -158,6 +158,16 @@ window-rule {
 }
 
 layer-rule {
+    match namespace="waybar"
+    shadow {
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+    }
+}
+
+layer-rule {
     match namespace="swaync-notification-window"
     match namespace="swaync-control-center"
     block-out-from "screencast"
