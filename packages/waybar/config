@@ -83,7 +83,7 @@
     },
     "clock": {
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format": "{:%e\n\n■\n\n<b>%H\n%M</b>}",
+      "format": "{:%a\n%e\n\n■\n\n<b>%H\n%M</b>}",
       "justify": "center"
     },
     "cpu": {
