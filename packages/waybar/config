@@ -71,7 +71,7 @@
           ""
         ]
       },
-      "format-muted": "󰖁 ",
+      "format-muted": "󰖁",
       "on-click": "pamixer --toggle-mute",
       "scroll-step": 1,
       "tooltip": false,
