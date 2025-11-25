@@ -274,5 +274,7 @@ binds {
     Mod+F4 { screenshot; }
     Mod+F5 { screenshot-window; }
 
+    Mod+E { spawn "niri-dynamic-cast";  }
+
     Mod+Shift+E { quit; }
 }
