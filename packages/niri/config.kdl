@@ -219,6 +219,9 @@ binds {
     Mod+Shift+K     { move-window-to-workspace-up; }
     Mod+Shift+L     { move-column-right; }
 
+    Mod+Ctrl+K { move-workspace-up; }
+    Mod+Ctrl+J { move-workspace-down; }
+
     Mod+comma  { focus-window-down; }
     Mod+semicolon { focus-window-up; }
     Mod+Shift+comma { move-window-down; }
