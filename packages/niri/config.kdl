@@ -23,7 +23,7 @@ layout {
         proportion 0.66667
         proportion 0.75
     }
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.66667; }
     focus-ring {
         width 4
         active-gradient from="#7aa2f7" to="#57D494" angle=45
@@ -102,11 +102,8 @@ window-rule {
 }
 
 window-rule {
-    match app-id="^com.mitchellh.ghostty"
-    match app-id="zen-beta"
-    match app-id="chrome-beta.music.apple.com__fr-Default"
-    match app-id="ferdium"
-    default-column-width { proportion 0.66667; }
+    match app-id="signal"
+    default-column-width { proportion 0.5; }
 }
 
 window-rule {
