@@ -1,29 +1,5 @@
 {
   "pins": {
-    "lix": {
-      "type": "Git",
-      "repository": {
-        "type": "Git",
-        "url": "https://git.lix.systems/lix-project/lix"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "cb0f9b9590d419df8ed8f669b42b64bc3c7c2f8f",
-      "url": null,
-      "hash": "14215v9cydx709h07wdq9h5kyq6sqyi6y0an9s0qbrw7ksrr5if8"
-    },
-    "lix-module": {
-      "type": "Git",
-      "repository": {
-        "type": "Git",
-        "url": "https://git.lix.systems/lix-project/nixos-module"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "192c92b603731fbc1bade6c1b18c8d8a0086f703",
-      "url": null,
-      "hash": "1azx4wj4a1k6w9kcx66rla1iw47wnlzs4l5fyrszfnaxazn3lvlb"
-    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",

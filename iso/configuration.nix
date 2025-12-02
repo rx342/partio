@@ -1,29 +1,32 @@
 { lib, pkgs, ... }:
 
 let
-  source = import ../npins;
-  inherit (source) lix-module;
-  lix = source.lix.outPath;
   partio = import ../partio.nix { inherit (pkgs) system; };
 in
 {
-  imports = [
-    (import "${lix-module}/module.nix" {
-      inherit lix;
-      versionSuffix = "pre${builtins.substring 0 8 lix.lastModifiedDate}-${lix.shortRev}";
-    })
-  ];
-
-  nix.settings = {
-    experimental-features = [
-      "nix-command"
-      "flakes"
-    ];
+  nix = {
+    package = pkgs.lixPackageSets.stable.lix;
+    settings = {
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+    };
   };
 
   nixpkgs = {
     hostPlatform = "x86_64-linux";
-    overlays = [ (import ../overlays/default.nix) ];
+    overlays = [
+      (import ../overlays/default.nix)
+      (final: prev: {
+        inherit (prev.lixPackageSets.stable)
+          nixpkgs-review
+          nix-eval-jobs
+          nix-fast-build
+          colmena
+          ;
+      })
+    ];
     config = {
       allowUnsupportedSystem = true;
       allowUnfree = true;
