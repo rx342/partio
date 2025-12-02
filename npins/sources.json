@@ -3,8 +3,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre902642.bb813de6d224/nixexprs.tar.xz",
-      "hash": "0mq4bb4wrqvi7iz8r4aaxi6xa50rz29vifnill4avrfky9immv4q"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre905078.8c29968b3a94/nixexprs.tar.xz",
+      "hash": "1fph2jsllvw2h4596yjdcj4mdmz44acrccn2hvljwghf6qab7aqw"
     },
     "nvim-rx": {
       "type": "Git",
