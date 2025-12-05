@@ -1,11 +1,8 @@
 image=~/.local/share/wallpapers/lockscreen.png
 bs-hl-color=#f7768e
-clock
 color=00000000
-datestr=%a
 font=Inter
 ignore-empty-password
-indicator
 indicator-radius=200
 indicator-thickness=20
 inside-clear-color=#1a1b26
@@ -27,4 +24,3 @@ text-clear-color=#787c99
 text-color=#787c99
 text-ver-color=#787c99
 text-wrong-color=#f7768e
-timestr=%H:%M
