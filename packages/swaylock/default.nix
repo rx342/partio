@@ -2,7 +2,7 @@
 
 {
   wrappers.swaylock = {
-    basePackage = pkgs.swaylock-effects;
+    basePackage = pkgs.swaylock;
     overrideAttrs = old: {
       pname = "${old.pname}-rx342";
     };
