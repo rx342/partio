@@ -1,4 +1,5 @@
 image=~/.local/share/wallpapers/lockscreen.png
+scaling=fit
 bs-hl-color=#f7768e
 color=00000000
 font=Inter
