@@ -27,7 +27,8 @@ layout {
     focus-ring {
         width 4
         active-gradient from="#7aa2f7" to="#57D494" angle=45
-        inactive-color "#e0af68"
+        inactive-gradient from="#1e1e2e" to="#b4befe" angle=45
+        urgent-gradient from="#f38ba8" to="#fab387" angle=45
     }
     border {
         // If you enable the border, you probably want to disable the focus ring.
