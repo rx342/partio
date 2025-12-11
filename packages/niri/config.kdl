@@ -93,6 +93,10 @@ output "Dell Inc. DELL P2418HZm P0JNT1A82WTB" {
     }
 }
 
+output "Philips Consumer Electronics Company 50BDL3010Q 0x01010101" {
+    scale 2.0
+}
+
 gestures {
     hot-corners {
         off
