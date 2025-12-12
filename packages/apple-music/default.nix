@@ -2,14 +2,14 @@
   stdenvNoCC,
   makeDesktopItem,
   writeShellApplication,
-  chromium,
+  ungoogled-chromium,
 }:
 
 let
   apple-music = writeShellApplication {
     name = "apple-music";
     runtimeInputs = [
-      (chromium.override { enableWideVine = true; })
+      (ungoogled-chromium.override { enableWideVine = true; })
     ];
     text = # bash
       ''
