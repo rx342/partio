@@ -66,6 +66,7 @@ output "Samsung Electric Company C27JG5x H4ZN602638" {
             proportion 0.5
             proportion 0.66667
             proportion 0.75
+            proportion 0.9
         }
     default-column-width { proportion 0.66667; }
     }
@@ -77,6 +78,7 @@ output "Dell Inc. DELL P2419H F7XL993" {
             proportion 0.5
             proportion 0.66667
             proportion 0.75
+            proportion 0.9
         }
     default-column-width { proportion 0.66667; }
     }
@@ -88,6 +90,7 @@ output "Dell Inc. DELL P2418HZm P0JNT1A82WTB" {
             proportion 0.5
             proportion 0.66667
             proportion 0.75
+            proportion 0.9
         }
     default-column-width { proportion 0.66667; }
     }
