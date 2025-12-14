@@ -142,11 +142,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id="signal"
-    default-column-width { proportion 0.5; }
-}
-
-window-rule {
     match app-id="mpv"
     match app-id="tv.plex.Plex"
     open-maximized true
