@@ -15,6 +15,7 @@ let
         ../packages/fish/default.nix
         ../packages/sioyek/default.nix
         ../packages/mpv/default.nix
+        ../packages/yt-dlp/default.nix
         ../packages/feh/default.nix
         ../packages/translate-shell/default.nix
         ../packages/wezterm/default.nix
@@ -45,6 +46,7 @@ in
     fish = wrapped-with-pkgs.config.wrappers.fish.wrapped;
     sioyek = wrapped-with-pkgs.config.wrappers.sioyek.wrapped;
     mpv = wrapped-with-pkgs.config.wrappers.mpv.wrapped;
+    yt-dlp = wrapped-with-pkgs.config.wrappers.yt-dlp.wrapped;
     feh = wrapped-with-pkgs.config.wrappers.feh.wrapped;
     translate-shell = wrapped-with-pkgs.config.wrappers.translate-shell.wrapped;
     wezterm = wrapped-with-pkgs.config.wrappers.wezterm.wrapped;
