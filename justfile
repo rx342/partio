@@ -31,5 +31,5 @@ ether iso="result/iso/*.iso" num_cores="4" ram="4G":
 
 # Burn ISO into a disk
 [group("iso")]
-burn disk:
-    @caligula burn result/iso/*.iso -o {{ disk }}
+burn disk iso="result/iso/*.iso":
+    @caligula burn {{ iso }} -o {{ disk }}
