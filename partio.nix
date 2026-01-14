@@ -21,6 +21,7 @@ wrapper-manager.lib.wrapWith pkgs {
     rx342.git
     rx342.tmux
     rx342.neovim
+    rx342.yazi
     nix-output-monitor
     just
     npins
@@ -28,7 +29,6 @@ wrapper-manager.lib.wrapWith pkgs {
     ripgrep
     zoxide
     direnv
-    yazi
     nushell
   ];
 }
