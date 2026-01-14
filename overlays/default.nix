@@ -77,5 +77,6 @@ in
     realise-symlink = prev.callPackage ../packages/realise-symlink/default.nix { };
     neovim = import ../packages/nvim/default.nix { inherit (prev) system; };
     apple-music = prev.callPackage ../packages/apple-music/default.nix { };
+    yazi = prev.callPackage ../packages/yazi/default.nix { };
   };
 }
