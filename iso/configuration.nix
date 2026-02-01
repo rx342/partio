@@ -93,5 +93,6 @@ in
 
   isoImage = {
     makeUsbBootable = true;
+    squashfsCompression = "zstd -Xcompression-level 19";
   };
 }
