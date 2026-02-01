@@ -91,6 +91,9 @@ in
 
   system.stateVersion = "25.11";
 
+  # Enable SSH in the boot process.
+  systemd.services.sshd.wantedBy = lib.mkForce [ "multi-user.target" ];
+
   isoImage = {
     makeUsbBootable = true;
     squashfsCompression = "zstd -Xcompression-level 19";
