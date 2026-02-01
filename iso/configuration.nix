@@ -6,6 +6,9 @@ in
 {
   nix = {
     package = pkgs.lixPackageSets.stable.lix;
+    channel = {
+      enable = false;
+    };
     settings = {
       experimental-features = [
         "nix-command"
@@ -55,6 +58,9 @@ in
           "networkmanager"
         ];
         shell = partio;
+        openssh.authorizedKeys.keys = [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ16Q6HeQQ5xm9ss4ITLd0Me31/qmIM++yC1lIkXyc6z"
+        ];
       };
     };
     mutableUsers = false;
