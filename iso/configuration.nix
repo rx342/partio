@@ -90,4 +90,8 @@ in
   networking.hostName = "ether";
 
   system.stateVersion = "25.11";
+
+  isoImage = {
+    makeUsbBootable = true;
+  };
 }

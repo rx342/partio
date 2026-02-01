@@ -22,7 +22,7 @@ clean:
 # Create install ISO
 [group("iso")]
 create:
-    @nix-build {{ partio }}/iso/default.nix -A config.system.build.isoImage --no-allow-import-from-derivation
+    @nix-build {{ partio }}/iso/default.nix -A minimal.config.system.build.isoImage --no-allow-import-from-derivation
 
 # Run install ISO in a VM
 [group("iso")]
