@@ -40,6 +40,7 @@ in
     man.generateCaches = false;
     info.enable = false;
     doc.enable = false;
+    nixos.enable = false;
   };
 
   environment.systemPackages = [
@@ -98,4 +99,7 @@ in
     makeUsbBootable = true;
     squashfsCompression = "zstd -Xcompression-level 19";
   };
+
+  boot.loader.systemd-boot.enable = lib.mkForce false;
+  system.switch.enable = false;
 }
