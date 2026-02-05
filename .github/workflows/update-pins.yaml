@@ -42,3 +42,9 @@ jobs:
           body: "Automated `npins` update."
           branch: update-npins
           token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Merge Pull Request
+        run: gh pr merge --rebase --auto --delete-branch "$PR"
+        env:
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          PR: ${{ steps.pr.outputs.pull-request-url }}
