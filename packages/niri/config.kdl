@@ -58,6 +58,8 @@ layout {
         // top 64
         // bottom 64
     }
+    // transparent workspace background to not move wallpaper
+    background-color "transparent"
 }
 
 output "Samsung Electric Company C27JG5x H4ZN602638" {
@@ -198,6 +200,11 @@ layer-rule {
         spread 5
         offset x=0 y=5
     }
+}
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
 }
 
 layer-rule {
