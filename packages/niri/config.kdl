@@ -115,6 +115,7 @@ spawn-sh-at-startup "signal-desktop --enable-features=UseOzonePlatform --ozone-p
 spawn-sh-at-startup "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-at-startup "zen-beta"
 spawn-at-startup "ghostty"
+spawn-at-startup "vicinae" "server"
 
 hotkey-overlay {
     skip-at-startup
@@ -138,7 +139,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="Rofi"
+    match app-id="vicinae"
     open-floating true
     open-focused true
 }
@@ -215,17 +216,14 @@ layer-rule {
 
 binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show drun"; }
+    Mod+D hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
     Mod+O hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f"; }
     Mod+Shift+O allow-when-locked=true { spawn-sh "swaylock -f"; }
     Mod+I hotkey-overlay-title="Internet browser" { spawn "zen-beta"; }
     Mod+U hotkey-overlay-title="Private Internet browser" { spawn-sh "zen-beta --private-window"; }
     Mod+A hotkey-overlay-title="swaync" { spawn-sh "swaync-client -t -sw"; }
     Mod+Space hotkey-overlay-title="Dismiss notifications" { spawn-sh "swaync-client -C"; }
-    Mod+B hotkey-overlay-title="Translation" { spawn "rofi-translate"; }
-    Mod+colon hotkey-overlay-title="Emoji" { spawn-sh "bemoji --hist-limit 0 --private --noline"; }
     Mod+N hotkey-overlay-title="File browser" { spawn "nautilus"; }
-    Mod+P hotkey-overlay-title="Power management" { spawn "rofi-power-menu"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pamixer -i 3"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "pamixer -d 3"; }
