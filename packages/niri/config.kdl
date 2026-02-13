@@ -139,12 +139,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id="vicinae"
-    open-floating true
-    open-focused true
-}
-
-window-rule {
     match app-id="mpv"
     match app-id="tv.plex.Plex"
     open-maximized true
