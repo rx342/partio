@@ -75,7 +75,7 @@ in
     );
     swaynotificationcenter = wrapped-with-pkgs.config.wrappers.swaynotificationcenter.wrapped;
     realise-symlink = prev.callPackage ../packages/realise-symlink/default.nix { };
-    neovim = import ../packages/nvim/default.nix { inherit (prev) system; };
+    neovim = import ../packages/nvim/default.nix { inherit (prev.stdenv.hostPlatform) system; };
     apple-music = prev.callPackage ../packages/apple-music/default.nix { };
     yazi = prev.callPackage ../packages/yazi/default.nix { };
   };
