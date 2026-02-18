@@ -3,3 +3,13 @@ font-size = 18
 theme = TokyoNight
 window-decoration = none
 window-theme = auto
+
+keybind = alt+e=new_split:down
+keybind = alt+ù=new_split:right
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:down
+keybind = alt+k=goto_split:up
+keybind = alt+l=goto_split:right
+keybind = alt+c=new_tab
+keybind = alt+n=next_tab
+keybind = alt+p=previous_tab
