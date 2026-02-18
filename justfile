@@ -7,7 +7,7 @@ default:
 # Build partio
 [group("utils")]
 partio:
-    @nix-build {{ partio }}/partio.nix --no-allow-import-from-derivation
+    @nix-build {{ partio }} -A partio --no-allow-import-from-derivation
 
 # Build all wrapped packages
 [group("utils")]

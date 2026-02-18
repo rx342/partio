@@ -5,15 +5,16 @@
     { self, ... }:
     let
       system = "x86_64-linux";
+      partio = import ./default.nix { inherit system; };
     in
     {
       packages.${system} = {
-        partio = import ./partio.nix { inherit system; };
+        inherit (partio) partio;
         default = self.packages.${system}.partio;
       };
 
       overlays = {
-        default = import ./overlays/default.nix;
+        inherit (partio.overlays) default;
       };
     };
 }
