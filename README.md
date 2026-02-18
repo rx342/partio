@@ -35,7 +35,7 @@ This repository also exposes all wrapped packages so you can pull them easily vi
 ```nix
 # without flakes
 pkgs = import <nixpkgs> {
-  overlays = [ (import "${./path/to/partio}/overlays/default.nix") ]
+  overlays = [ (import ./path/to/partio { }).overlays.default ]
   ...
 };
 
