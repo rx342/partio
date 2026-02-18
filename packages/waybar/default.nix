@@ -14,14 +14,11 @@
       with pkgs;
       let
         appearance-module = pkgs.callPackage ../appearance-module/default.nix { };
-        power-profile-module = pkgs.callPackage ../power-profile-module/default.nix { };
         dnd-module = pkgs.callPackage ../dnd-module/default.nix { };
       in
       [
         appearance-module.getter
         appearance-module.setter
-        power-profile-module.getter
-        power-profile-module.setter
         dnd-module.getter
         dnd-module.setter
         coreutils-full
