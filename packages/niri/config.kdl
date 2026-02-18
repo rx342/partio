@@ -205,6 +205,7 @@ layer-rule {
 layer-rule {
     match namespace="swaync-notification-window"
     match namespace="swaync-control-center"
+    match namespace="vicinae"
     block-out-from "screencast"
 }
 
