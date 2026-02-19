@@ -17,7 +17,7 @@ build package:
 # Build all wrapped packages
 [group("utils")]
 build-all:
-    @nix-build {{ partio }}/packages/all-packages.nix --expr 'builtins.attrValues (import ./packages/all-packages.nix {})' --no-allow-import-from-derivation
+    @nix-build --expr 'builtins.attrValues (import {{ partio }}/packages/all-packages.nix {})' --no-allow-import-from-derivation
 
 # Clean repository
 [group("utils")]
