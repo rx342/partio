@@ -5,7 +5,7 @@
         "niri/workspaces"
     ],
     "modules-center": ["clock"],
-    "modules-right": ["custom/appearance", "custom/dnd", "pulseaudio", "cpu", "memory", "battery", "tray", "privacy"],
+    "modules-right": ["tray", "privacy", "custom/appearance", "custom/dnd", "pulseaudio", "cpu", "memory", "battery"],
     "custom/logout": {
         "format": "⏻",
         "tooltip": false,
