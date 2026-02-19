@@ -9,10 +9,15 @@ default:
 partio:
     @nix-build {{ partio }} -A partio --no-allow-import-from-derivation
 
+# Build package
+[group("utils")]
+build package:
+    @nix-build {{ partio }}/packages/all-packages.nix -A {{ package }} --no-allow-import-from-derivation
+
 # Build all wrapped packages
 [group("utils")]
-build:
-    @nix-build {{ partio }}/packages/all-packages.nix --no-allow-import-from-derivation
+build-all:
+    @nix-build {{ partio }}/packages/all-packages.nix --expr 'builtins.attrValues (import ./packages/all-packages.nix {})' --no-allow-import-from-derivation
 
 # Clean repository
 [group("utils")]

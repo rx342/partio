@@ -10,4 +10,4 @@
   },
 }:
 
-builtins.attrValues pkgs.rx342
+pkgs.rx342
