@@ -3,6 +3,7 @@ font-size = 18
 theme = TokyoNight
 window-decoration = none
 window-theme = auto
+command = fish
 
 keybind = alt+e=new_split:down
 keybind = alt+ù=new_split:right
