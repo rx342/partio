@@ -5,12 +5,6 @@ let
   loadPlugin = pkgs.writeTextDir "${vendorConf}/rx_plugin.fish" (
     builtins.readFile ./functions/fish_load_plugin.fish
   );
-  loadSessionizer = pkgs.writeTextDir "${vendorConf}/rx_sessionizer.fish" (
-    builtins.readFile ./functions/fish_tmux_sessionizer.fish
-  );
-  loadTmpSessionizer = pkgs.writeTextDir "${vendorConf}/rx_tmp_sessionizer.fish" (
-    builtins.readFile ./functions/fish_tmux_tmp_dir.fish
-  );
   loadKeybinds = pkgs.writeTextDir "${vendorConf}/rx_keybinds.fish" (
     builtins.readFile ./functions/fish_user_key_bindings.fish
   );
@@ -58,15 +52,12 @@ in
         ":"
         (lib.makeSearchPathOutput "out" "share" [
           loadPlugin
-          loadSessionizer
-          loadTmpSessionizer
           loadKeybinds
           loadColors
           config
         ])
       ];
       pathAdd = [
-        (pkgs.callPackage ../tmux/sessionizer/default.nix { })
         pkgs.starship
         pkgs.fzf
       ];
