@@ -305,9 +305,9 @@ binds {
 
     Mod+V       { toggle-window-floating; }
 
-    Mod+F3 { screenshot-screen; }
-    Mod+F4 { screenshot; }
-    Mod+F5 { screenshot-window; }
+    Mod+F4 { screenshot-screen show-pointer=false; }
+    Mod+F5 { screenshot show-pointer=false; }
+    Mod+F6 { screenshot-window; }
 
     Mod+E { spawn "niri-dynamic-cast";  }
 
