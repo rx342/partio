@@ -5,4 +5,7 @@ function fish_user_key_bindings
     bind -M default U redo
     bind -M insert \cV edit_command_buffer
     bind -M default \cV edit_command_buffer
+
+    bind -M insert \ef 'cdi; commandline -f repaint'
+    bind -M default \ef 'cdi; commandline -f repaint'
 end
