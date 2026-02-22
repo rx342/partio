@@ -8,4 +8,6 @@ function fish_user_key_bindings
 
     bind -M insert \ef 'cdi; commandline -f repaint'
     bind -M default \ef 'cdi; commandline -f repaint'
+    bind -M insert \eo 'cd -; commandline -f repaint'
+    bind -M default \eo 'cd -; commandline -f repaint'
 end
