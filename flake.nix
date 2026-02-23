@@ -13,8 +13,6 @@
         default = self.packages.${system}.partio;
       };
 
-      overlays = {
-        inherit (partio.overlays) default;
-      };
+      inherit (partio) overlays;
     };
 }
