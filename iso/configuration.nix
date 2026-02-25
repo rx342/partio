@@ -1,7 +1,13 @@
 { lib, pkgs, ... }:
 
 let
-  partio = import ../partio.nix { inherit (pkgs) system; };
+  inherit
+    (import ../default.nix {
+      inherit (pkgs) system;
+      inherit pkgs;
+    })
+    partio
+    ;
 in
 {
   nix = {
