@@ -43,4 +43,7 @@ burn disk iso="result/iso/*.iso":
     #!/usr/bin/env nix-shell
     #!nix-shell {{ partio }}/shell.nix -i bash
 
+    # avoid "path must be shorter than SUN_LEN" error
+    export TMPDIR=/tmp
+
     caligula burn {{ iso }} -o {{ disk }}
