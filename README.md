@@ -51,8 +51,8 @@ and install packages
 ```nix
 environment.systemPackages = with pkgs.rx342; [
   fish
-  tmux
-  wezterm
+  yazi
+  ghostty
 ];
 ```
 
