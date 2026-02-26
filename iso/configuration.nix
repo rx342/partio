@@ -106,6 +106,8 @@ in
     squashfsCompression = "zstd -Xcompression-level 19";
   };
 
-  boot.loader.systemd-boot.enable = lib.mkForce false;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = false;
+
   system.switch.enable = false;
 }
