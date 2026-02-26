@@ -3,7 +3,7 @@
 let
   inherit
     (import ../default.nix {
-      inherit (pkgs) system;
+      inherit (pkgs.stdenv.hostPlatform) system;
       inherit pkgs;
     })
     partio
