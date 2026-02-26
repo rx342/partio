@@ -8,7 +8,7 @@ let
 in
 {
   minimal = mkMachine [
-    "${source.nixpkgs}/nixos/modules/installer/cd-dvd/iso-image.nix"
+    "${source.nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix"
     ./configuration.nix
     (
       { lib, ... }:
