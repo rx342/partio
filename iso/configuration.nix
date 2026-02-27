@@ -11,6 +11,7 @@ let
 in
 {
   nix = {
+    nixPath = [ "nixpkgs=${pkgs.path}" ];
     package = pkgs.lixPackageSets.stable.lix;
     channel = {
       enable = false;
@@ -51,6 +52,7 @@ in
 
   environment.systemPackages = [
     partio
+    pkgs.disko
   ];
 
   users = {
