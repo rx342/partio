@@ -65,6 +65,10 @@ layout {
     background-color "transparent"
 }
 
+output "Lenovo Group Limited 0x403A Unknown" {
+    variable-refresh-rate
+}
+
 output "Samsung Electric Company C27JG5x H4ZN602638" {
     layout {
         preset-column-widths {
