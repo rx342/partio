@@ -312,6 +312,8 @@ binds {
     Mod+F5 { screenshot show-pointer=false; }
     Mod+F6 { screenshot-window; }
 
+    Mod+F8 hotkey-overlay-title="Turn on/off eDP-1" { spawn-sh "niri msg outputs | grep -n2 eDP | grep -q Disabled && { echo off; niri msg output eDP-1 on; } || { echo on; niri msg output eDP-1 off; }"; }
+
     Mod+E { spawn "niri-dynamic-cast";  }
 
     Mod+Shift+E { quit; }
