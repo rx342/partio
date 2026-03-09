@@ -13,6 +13,9 @@ input {
     mouse {
         natural-scroll
     }
+    trackpoint {
+        natural-scroll
+    }
 }
 
 layout {
