@@ -27,7 +27,7 @@ jobs:
           nix-shell -p npins --run "npins upgrade"
           nix-shell -p npins --run "npins update"
 
-      - uses: actions/create-github-app-token@v2
+      - uses: actions/create-github-app-token@v3
         id: generate-token
         with:
           app-id: ${{ secrets.GH_APP_ID }}
