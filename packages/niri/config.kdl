@@ -109,6 +109,10 @@ output "Philips Consumer Electronics Company 50BDL3010Q 0x01010101" {
     scale 2.0
 }
 
+output "Philips Consumer Electronics Company 65BDL3010Q 0x01010101" {
+    scale 2.0
+}
+
 gestures {
     hot-corners {
         off
