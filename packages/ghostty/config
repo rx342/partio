@@ -5,6 +5,10 @@ window-decoration = none
 window-theme = auto
 command = fish
 
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = clipboard
+
 gtk-tabs-location = bottom
 
 keybind = alt+r=reload_config
