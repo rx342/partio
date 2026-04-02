@@ -151,7 +151,7 @@ window-rule {
 
 window-rule {
     match app-id="mpv"
-    match app-id="tv.plex.Plex"
+    match app-id="nl.jknaapen.fladder"
     open-maximized true
 }
 
