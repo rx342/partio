@@ -44,7 +44,7 @@ in
   };
 
   documentation = {
-    man.generateCaches = false;
+    man.cache.enable = false;
     info.enable = false;
     doc.enable = false;
     nixos.enable = false;
