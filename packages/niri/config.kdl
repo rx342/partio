@@ -151,8 +151,12 @@ window-rule {
 
 window-rule {
     match app-id="mpv"
-    match app-id="nl.jknaapen.fladder"
     open-maximized true
+}
+
+window-rule {
+    match app-id="nl.jknaapen.fladder"
+    open-fullscreen true
 }
 
 window-rule {
