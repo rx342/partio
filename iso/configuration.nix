@@ -16,12 +16,6 @@ in
     channel = {
       enable = false;
     };
-    settings = {
-      experimental-features = [
-        "nix-command"
-        "flakes"
-      ];
-    };
   };
 
   nixpkgs = {
@@ -44,7 +38,11 @@ in
   };
 
   documentation = {
-    man.cache.enable = false;
+    man = {
+      enable = false;
+      man-db.enable = false;
+    };
+    dev.enable = false;
     info.enable = false;
     doc.enable = false;
     nixos.enable = false;
@@ -108,7 +106,8 @@ in
     squashfsCompression = "zstd -Xcompression-level 19";
   };
 
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = false;
+  boot.loader.grub.enable = false;
   boot.loader.efi.canTouchEfiVariables = false;
 
   system.switch.enable = false;
