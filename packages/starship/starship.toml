@@ -1,9 +1,9 @@
 format = "$username$hostname$directory$git_branch$git_state$git_status$cmd_duration$line_break$character"
 
 [character]
-error_symbol = "[❯](red)"
-success_symbol = "[❯](purple)"
-vimcmd_symbol = "[❮](green)"
+error_symbol = "[](red)"
+success_symbol = "[](purple)"
+vimcmd_symbol = "[](green)"
 
 [cmd_duration]
 format = "[$duration]($style) "
