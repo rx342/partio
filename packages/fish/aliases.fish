@@ -24,7 +24,7 @@ abbr --add -- m man
 abbr --add -- md 'mkdir -p'
 abbr --add -- mv 'mv -i'
 abbr --add -- n yazi
-abbr --add -- ns nom-shell
+abbr --add -- ns nix-shell
 abbr --add -- nb nom-build
 abbr --add -- ne 'nix-instantiate --eval'
 abbr --add -- rm 'rm -i'
