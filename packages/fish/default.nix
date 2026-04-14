@@ -36,6 +36,8 @@ let
 
           set -gx STARSHIP_CONFIG ${../starship/starship.toml}
           starship init fish | source
+
+          nix-your-shell --nom fish | source
         end
       '';
 in
@@ -60,6 +62,7 @@ in
       pathAdd = [
         pkgs.starship
         pkgs.fzf
+        pkgs.nix-your-shell
       ];
     };
   };
