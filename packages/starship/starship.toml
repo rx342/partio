@@ -1,4 +1,4 @@
-format = "$username$hostname$directory$git_branch$git_state$git_status$cmd_duration$line_break$character"
+format = "$username$hostname$directory$git_branch$git_state$git_status$python$nix_shell$cmd_duration$line_break$character"
 
 [character]
 error_symbol = "[](red)"
@@ -34,3 +34,9 @@ untracked = "​"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[nix_shell]
+symbol = "❄️"
+impure_msg = "🧪"
+pure_msg = "✨"
+format = "[$symbol $state $name](bold blue) "
