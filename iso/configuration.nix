@@ -38,6 +38,7 @@ in
   };
 
   documentation = {
+    enable = false;
     man = {
       enable = false;
       man-db.enable = false;
@@ -111,4 +112,5 @@ in
   boot.loader.efi.canTouchEfiVariables = false;
 
   system.switch.enable = false;
+  system.installer.channel.enable = false;
 }
