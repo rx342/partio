@@ -3,8 +3,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre977011.456e8a9468b9/nixexprs.tar.xz",
-      "hash": "sha256-KbwJuc+hYt9EOOPNDok8MfWNonZJibcwGnJ1mT+eX8Q="
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre980800.566acc07c54d/nixexprs.tar.xz",
+      "hash": "sha256-bo9Hbl5yPjDRldsn1Stnbsmn/nPF0cVlowuLSGHduuA="
     },
     "nvim-rx": {
       "type": "Git",
@@ -15,9 +15,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "e00cd55e7606da6459b18c833c064735ff24381c",
-      "url": "https://github.com/rx342/nvim/archive/e00cd55e7606da6459b18c833c064735ff24381c.tar.gz",
-      "hash": "sha256-sGhXG6fkft8KqVONJtvloXgVU/4kkjgftLuo6rDaBec="
+      "revision": "47538f8cc054723941cf489df3aa3970dd2e6cd7",
+      "url": "https://github.com/rx342/nvim/archive/47538f8cc054723941cf489df3aa3970dd2e6cd7.tar.gz",
+      "hash": "sha256-gH49ZBRHMnE1JCCIoVAUM/1y0JJMeovo0lUjBvm1hWE="
     },
     "wrapper-manager": {
       "type": "Git",
