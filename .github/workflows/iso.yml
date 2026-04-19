@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Maximize build space
-        uses: easimon/maximize-build-space@v10
+        uses: easimon/maximize-build-space@fc881a613ad2a34aca9c9624518214ebc21dfc0c # v10
         with:
           overprovision-lvm: true
           remove-dotnet: true
@@ -27,17 +27,17 @@ jobs:
           remove-docker-images: true
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Install Lix
-        uses: samueldr/lix-gha-installer-action@v2026-02-22
+        uses: samueldr/lix-gha-installer-action@7b7f14d320d6aacfb65bd1ef761566b3b69e474c # v2026-02-22
         with:
           extra_nix_config: |
             trusted-public-keys = partio.cachix.org-1:W8w3kE6/UOLs0dg1kxCDYvllNVsaBFbNBofVR+wYhrw= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
             substituters = https://partio.cachix.org https://cache.nixos.org/
 
       - name: Install cachix
-        uses: cachix/cachix-action@v17
+        uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
         with:
           name: partio
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
