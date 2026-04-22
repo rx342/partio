@@ -124,7 +124,7 @@ spawn-at-startup "waybar"
 spawn-sh-at-startup "swaybg -i ~/.local/share/wallpapers/home.png -m fill"
 spawn-sh-at-startup "signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-sh-at-startup "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
-spawn-at-startup "zen-beta"
+spawn-at-startup "helium"
 spawn-at-startup "ghostty"
 spawn-at-startup "vicinae" "server"
 
@@ -162,7 +162,6 @@ window-rule {
 window-rule {
     match app-id="signal"
     match app-id="ferdium"
-    match app-id="zen-beta" title="Zen Browser Private Browsing"
     match app-id="org.gnome.Nautilus"
     block-out-from "screencast"
 }
@@ -191,7 +190,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="zen-beta" title="^Picture-in-Picture$"
+    match app-id="" title="^Mode PIP \(Picture-in-Picture\)$"
     open-floating true
     default-column-width { fixed 480; }
     default-window-height { fixed 270; }
@@ -229,8 +228,8 @@ binds {
     Mod+D hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
     Mod+O hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f"; }
     Mod+Shift+O allow-when-locked=true { spawn-sh "swaylock -f"; }
-    Mod+I hotkey-overlay-title="Internet browser" { spawn "zen-beta"; }
-    Mod+U hotkey-overlay-title="Private Internet browser" { spawn-sh "zen-beta --private-window"; }
+    Mod+I hotkey-overlay-title="Internet browser" { spawn "helium"; }
+    Mod+U hotkey-overlay-title="Private Internet browser" { spawn-sh "helium --incognito"; }
     Mod+A hotkey-overlay-title="swaync" { spawn-sh "swaync-client -t -sw"; }
     Mod+Space hotkey-overlay-title="Dismiss notifications" { spawn-sh "swaync-client -C"; }
     Mod+N hotkey-overlay-title="File browser" { spawn "nautilus"; }
