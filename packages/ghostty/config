@@ -5,8 +5,6 @@ theme = TokyoNight
 window-decoration = none
 window-theme = auto
 
-background-opacity = 0.9
-
 command = fish
 
 clipboard-read = allow

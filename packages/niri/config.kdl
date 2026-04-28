@@ -205,6 +205,12 @@ window-rule {
 window-rule {
     match app-id="com.mitchellh.ghostty"
     match app-id="vicinae"
+    match app-id="org.gnome.Nautilus"
+    match app-id="signal"
+    match app-id="ferdium"
+
+    opacity 0.9
+
     background-effect {
         blur true
     }
