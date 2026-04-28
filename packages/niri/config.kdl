@@ -202,6 +202,21 @@ window-rule {
     open-floating false
 }
 
+window-rule {
+    match app-id="com.mitchellh.ghostty"
+    match app-id="vicinae"
+    background-effect {
+        blur true
+    }
+}
+
+layer-rule {
+    match namespace="vicinae"
+    background-effect {
+        blur true
+    }
+}
+
 layer-rule {
     match namespace="waybar"
     shadow {
