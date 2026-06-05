@@ -16,6 +16,7 @@ input {
     trackpoint {
         natural-scroll
     }
+    workspace-auto-back-and-forth
 }
 
 layout {
