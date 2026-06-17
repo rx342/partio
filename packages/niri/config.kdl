@@ -250,7 +250,6 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
     Mod+O hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f"; }
-    Mod+Shift+O allow-when-locked=true { spawn-sh "swaylock -f"; }
     Mod+I hotkey-overlay-title="Internet browser" { spawn "helium"; }
     Mod+U hotkey-overlay-title="Private Internet browser" { spawn-sh "helium --incognito"; }
     Mod+A hotkey-overlay-title="swaync" { spawn-sh "swaync-client -t -sw"; }
