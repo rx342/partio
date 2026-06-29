@@ -16,7 +16,7 @@ $env.config.abbreviations = {
   l: "ls",
   la: "ls -a",
   ll: "ls -l",
-  lla: "eza -la",
+  lla: "ls -la",
   m: "man",
   md: "mkdir",
   mv: "mv -i",
