@@ -5,7 +5,7 @@ if (which starship | is-not-empty) {
 
 if (which zoxide | is-not-empty) {
   mkdir ($nu.data-dir | path join "vendor/autoload")
-  zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
+  zoxide init nushell --cmd cd | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
 }
 
 $env.config.hooks.pre_prompt = [{
