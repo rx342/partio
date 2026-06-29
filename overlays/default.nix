@@ -13,6 +13,7 @@ let
         ../packages/git/default.nix
         ../packages/tmux/default.nix
         ../packages/fish/default.nix
+        ../packages/nushell/default.nix
         ../packages/sioyek/default.nix
         ../packages/mpv/default.nix
         ../packages/yt-dlp/default.nix
@@ -39,6 +40,7 @@ in
     git = wrapped-with-pkgs.config.wrappers.git.wrapped;
     tmux = wrapped-with-pkgs.config.wrappers.tmux.wrapped;
     fish = wrapped-with-pkgs.config.wrappers.fish.wrapped;
+    nushell = wrapped-with-pkgs.config.wrappers.nushell.wrapped;
     sioyek = wrapped-with-pkgs.config.wrappers.sioyek.wrapped;
     mpv = wrapped-with-pkgs.config.wrappers.mpv.wrapped;
     yt-dlp = wrapped-with-pkgs.config.wrappers.yt-dlp.wrapped;
