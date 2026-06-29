@@ -19,14 +19,13 @@ pkgs.lib.makeScope pkgs.newScope (final: {
       };
     in
     wrapper-manager.lib.wrapWith pkgs_overlay {
-      basePackage = pkgs_overlay.rx342.fish;
+      basePackage = pkgs_overlay.rx342.nushell;
       overrideAttrs = old: {
         pname = "partio";
       };
       pathAdd = with pkgs_overlay; [
         rx342.htop
         rx342.bat
-        rx342.eza
         rx342.git
         rx342.tmux
         rx342.neovim
@@ -38,7 +37,6 @@ pkgs.lib.makeScope pkgs.newScope (final: {
         ripgrep
         zoxide
         direnv
-        nushell
       ];
     };
   overlays = {
