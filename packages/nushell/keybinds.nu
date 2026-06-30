@@ -21,7 +21,7 @@ $env.config.keybindings ++= [
       { edit: Clear }
       {
         edit: InsertString,
-        value: "zi"
+        value: "cdi"
       }
       { send: Enter }
     ]
