@@ -1,8 +1,8 @@
 [alias]
 book = "zk new --template ~/zk_notes/.zk/templates/book.md --title \"$argv\""
-journal = "zk new -W ~/zk_notes/journal --group journal"
+journal = "zk new --working-dir ~/zk_notes/journal --group journal"
 paper = "zk new --template ~/zk_notes/.zk/templates/paper.md --title \"$argv\""
-work = "zk new -W ~/zk_notes/work --title \"$argv\""
+work = "zk new --working-dir ~/zk_notes/work --title \"$argv\""
 
 [extra]
 author = "rx"
