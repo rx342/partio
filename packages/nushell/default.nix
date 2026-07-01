@@ -22,6 +22,7 @@ let
         source ${nuscripts}/themes/nu-themes/tokyo-night.nu
         source ${./abbrv.nu}
         source ${./keybinds.nu}
+        source ${./completions.nu}
         source ${./autoload.nu}
       '';
 in
