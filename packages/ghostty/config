@@ -5,7 +5,7 @@ theme = TokyoNight
 window-decoration = none
 window-theme = auto
 
-command = nu
+command = fish
 
 clipboard-read = allow
 clipboard-write = allow
