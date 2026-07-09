@@ -13,6 +13,7 @@
       playerctl
       swaybg
       (pkgs.callPackage ./dynamic-cast/default.nix { })
+      (pkgs.callPackage ./kill-focused/default.nix { })
     ];
   };
 }

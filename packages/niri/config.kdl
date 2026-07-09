@@ -268,6 +268,7 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
     Super+Q repeat=false { close-window; }
+    Super+Shift+Q repeat=false { spawn "niri-kill-focused"; }
 
     Mod+Down  { focus-window-down; }
     Mod+Up { focus-window-up; }
