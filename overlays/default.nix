@@ -51,7 +51,6 @@ in
     fcitx5 = wrapped-with-pkgs.config.wrappers.fcitx5.wrapped;
     niri = wrapped-with-pkgs.config.wrappers.niri.wrapped;
     swaynotificationcenter = wrapped-with-pkgs.config.wrappers.swaynotificationcenter.wrapped;
-    realise-symlink = prev.callPackage ../packages/realise-symlink/default.nix { };
     neovim = import ../packages/nvim/default.nix { inherit (prev.stdenv.hostPlatform) system; };
     apple-music = prev.callPackage ../packages/apple-music/default.nix { };
     yazi = prev.callPackage ../packages/yazi/default.nix { };
