@@ -12,18 +12,14 @@
 pkgs.lib.makeScope pkgs.newScope (final: {
   partio =
     let
-      pkgs_overlay = import source.nixpkgs {
-        overlays = [ final.overlays.default ];
-        config = { };
-        inherit system;
-      };
+      pkgs' = pkgs.extend final.overlays.default;
     in
-    wrapper-manager.lib.wrapWith pkgs_overlay {
-      basePackage = pkgs_overlay.rx342.fish;
+    wrapper-manager.lib.wrapWith pkgs' {
+      basePackage = pkgs'.rx342.fish;
       overrideAttrs = old: {
         pname = "partio";
       };
-      pathAdd = with pkgs_overlay; [
+      pathAdd = with pkgs'; [
         rx342.htop
         rx342.bat
         rx342.git
