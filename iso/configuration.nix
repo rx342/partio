@@ -12,7 +12,7 @@ in
 {
   nix = {
     nixPath = [ "nixpkgs=${pkgs.path}" ];
-    package = pkgs.lixPackageSets.stable.lix;
+    package = pkgs.lixPackageSets.latest.lix;
     channel = {
       enable = false;
     };
@@ -23,7 +23,7 @@ in
     overlays = [
       (import ../overlays/default.nix)
       (final: prev: {
-        inherit (prev.lixPackageSets.stable)
+        inherit (prev.lixPackageSets.latest)
           nixpkgs-review
           nix-eval-jobs
           nix-fast-build
