@@ -3,9 +3,7 @@
 let
   inherit (pkgs) lib;
   nuscripts = (import ../../npins).nu_scripts.outPath;
-  plugins = with pkgs.nushellPlugins; [
-    polars
-  ];
+  plugins = with pkgs.nushellPlugins; [ ];
   msgPackz = pkgs.runCommand "nushellMsgPackz" { } ''
     mkdir -p "$out"
     ${pkgs.nushell}/bin/nu \
