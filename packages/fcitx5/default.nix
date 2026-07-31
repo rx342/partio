@@ -5,7 +5,6 @@
     basePackage = pkgs.kdePackages.fcitx5-with-addons.override {
       addons = with pkgs.qt6Packages; [
         fcitx5-unikey
-        fcitx5-chinese-addons
       ];
     };
     overrideAttrs = old: {
