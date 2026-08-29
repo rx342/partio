@@ -52,6 +52,7 @@ in
   environment.systemPackages = [
     partio
     pkgs.disko
+    pkgs.wush
   ];
 
   users = {
