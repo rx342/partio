@@ -33,5 +33,5 @@ $env.config.abbreviations = {
   vimdiff: "nvim -d",
   yt: "yt-dlp",
   zn: "zk new --title",
-  zo: "zk edit --interactive"
+  zo: "zk edit --interactive --sort=modified"
 }
