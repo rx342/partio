@@ -36,4 +36,4 @@ abbr --add -- view 'nvim -R'
 abbr --add -- vimdiff 'nvim -d'
 abbr --add -- yt yt-dlp
 abbr --add -- zn 'zk new --title'
-abbr --add -- zo 'zk edit --interactive'
+abbr --add -- zo 'zk edit --interactive --sort=modified'
