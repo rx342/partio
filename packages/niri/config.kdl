@@ -126,7 +126,7 @@ spawn-sh-at-startup "swaybg -i ~/.local/share/wallpapers/home.png -m fill"
 spawn-sh-at-startup "signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-sh-at-startup "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-at-startup "helium"
-spawn-at-startup "ghostty"
+spawn-at-startup "wezterm"
 spawn-at-startup "vicinae" "server"
 
 hotkey-overlay {
@@ -204,7 +204,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="com.mitchellh.ghostty"
+    match app-id="org.wezfurlong.wezterm"
     match app-id="vicinae"
     match app-id="org.gnome.Nautilus"
     match app-id="signal"
@@ -247,7 +247,7 @@ layer-rule {
 }
 
 binds {
-    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
     Mod+D hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
     Mod+O hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f"; }
     Mod+I hotkey-overlay-title="Internet browser" { spawn "helium"; }
