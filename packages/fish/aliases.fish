@@ -29,7 +29,8 @@ abbr --add -- nb nom-build
 abbr --add -- ne 'nix-instantiate --eval'
 abbr --add -- rm 'rm -i'
 abbr --add -- rs 'rsync -avh --info=progress2'
-abbr --add -- s ssh
+abbr --add -- s 'wezterm ssh'
+abbr --add -- st 'wezterm connect SSHMUX:'
 abbr --add -- t tmux
 abbr --add -- v 'nvim -R'
 abbr --add -- view 'nvim -R'
