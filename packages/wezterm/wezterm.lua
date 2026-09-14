@@ -76,6 +76,16 @@ config.keys = {
     action = wezterm.action.ActivateTabRelative(-1),
   },
   {
+    key = "n",
+    mods = "ALT|SHIFT",
+    action = wezterm.action.MoveTabRelative(1),
+  },
+  {
+    key = "p",
+    mods = "ALT|SHIFT",
+    action = wezterm.action.MoveTabRelative(-1),
+  },
+  {
     key = "c",
     mods = "CTRL|SHIFT",
     action = wezterm.action.CopyTo("Clipboard"),
