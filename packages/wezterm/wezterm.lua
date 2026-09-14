@@ -33,12 +33,12 @@ config.keys = {
   {
     key = "e",
     mods = "ALT",
-    action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+    action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
   },
   {
-    key = "ù",
+    key = "Quote",
     mods = "ALT",
-    action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+    action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
   },
   {
     key = "j",
