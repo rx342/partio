@@ -26,6 +26,11 @@ config.keys = {
     action = wezterm.action.CloseCurrentPane({ confirm = true }),
   },
   {
+    key = "f",
+    mods = "CTRL",
+    action = wezterm.action.Search({ CaseSmartString = "" }),
+  },
+  {
     key = "e",
     mods = "ALT",
     action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
