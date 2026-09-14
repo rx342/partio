@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
+config.term = "wezterm"
 config.default_prog = { "fish", "-l" }
 
 config.font = wezterm.font("Maple Mono NF CN")
