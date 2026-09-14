@@ -8,9 +8,13 @@ config.default_prog = { "fish", "-l" }
 config.font = wezterm.font("Maple Mono NF CN")
 config.font_size = 18
 config.color_scheme = "Tokyo Night"
+config.inactive_pane_hsb = {
+  brightness = 0.5,
+}
 
 config.window_decorations = "NONE"
 config.tab_bar_at_bottom = true
+config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 0,
   right = 0,
