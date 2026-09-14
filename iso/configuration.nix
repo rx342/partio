@@ -53,6 +53,7 @@ in
     partio
     pkgs.disko
     pkgs.wush
+    pkgs.wezterm
   ];
 
   users = {
