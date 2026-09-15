@@ -13,13 +13,31 @@ config.inactive_pane_hsb = {
 }
 
 config.window_decorations = "NONE"
-config.tab_bar_at_bottom = true
-config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 0,
   right = 0,
   top = 0,
   bottom = 0,
+}
+
+config.tab_bar_at_bottom = true
+config.hide_tab_bar_if_only_one_tab = true
+config.use_fancy_tab_bar = false
+config.show_new_tab_button_in_tab_bar = false
+config.colors = {
+  tab_bar = {
+    background = "#16161e",
+    active_tab = {
+      bg_color = "#222436",
+      fg_color = "#82aaff",
+      intensity = "Bold",
+    },
+    inactive_tab = {
+      bg_color = "#16161e",
+      fg_color = "#636da6",
+      italic = true,
+    },
+  },
 }
 
 config.disable_default_key_bindings = true
