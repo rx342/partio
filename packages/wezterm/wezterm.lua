@@ -17,7 +17,7 @@ config.window_padding = {
   left = 0,
   right = 0,
   top = 0,
-  bottom = 0,
+  bottom = 1,
 }
 
 config.tab_bar_at_bottom = true
@@ -119,5 +119,16 @@ config.keys = {
     action = wezterm.action.PasteFrom("Clipboard"),
   },
 }
+
+wezterm.on("update-right-status", function(window, pane)
+  local cwd_uri = pane:get_current_working_dir()
+  local host = cwd_uri.host or wezterm.hostname()
+  window:set_right_status(wezterm.format({
+    { Attribute = { Underline = "Dashed" } },
+    { Attribute = { Italic = true } },
+    { Foreground = { AnsiColor = "Yellow" } },
+    { Text = host },
+  }))
+end)
 
 return config
