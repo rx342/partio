@@ -124,7 +124,6 @@ wezterm.on("update-right-status", function(window, pane)
   local cwd_uri = pane:get_current_working_dir()
   local host = cwd_uri.host or wezterm.hostname()
   window:set_right_status(wezterm.format({
-    { Attribute = { Underline = "Dashed" } },
     { Attribute = { Italic = true } },
     { Foreground = { AnsiColor = "Yellow" } },
     { Text = host },
