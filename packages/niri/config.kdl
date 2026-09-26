@@ -30,7 +30,7 @@ layout {
     default-column-width { proportion 0.75; }
     focus-ring {
         width 4
-        active-gradient from="#7aa2f7" to="#57D494" angle=45
+        active-gradient from="#7aa2f7" to="#FA907A" angle=45
         inactive-gradient from="#1e1e2e" to="#b4befe" angle=45
         urgent-gradient from="#f38ba8" to="#fab387" angle=45
     }
