@@ -1,16 +1,21 @@
 {
     "layer": "top",
     "position": "left",
+    "height": 960,
     "modules-left": [
         "niri/workspaces"
     ],
-    "modules-center": ["clock"],
-    "modules-right": ["tray", "privacy", "custom/appearance", "custom/dnd", "pulseaudio", "cpu", "memory", "battery"],
-    "custom/logout": {
-        "format": "⏻",
-        "tooltip": false,
-        "on-click": "niri msg action quit"
-    },
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "privacy",
+        "custom/appearance",
+        "custom/dnd",
+        "pulseaudio",
+        "battery"
+    ],
     "niri/workspaces": {
         "all-outputs": true,
         "disable-markup": false,
