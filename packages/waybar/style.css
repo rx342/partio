@@ -52,7 +52,7 @@ tooltip {
 tooltip label {
   color: #d9e0ee;
 }
-#clock, #memory, #cpu, #pulseaudio, #network, #battery, #tray, #privacy, #custom-appearance, #custom-dnd {
+#clock, #pulseaudio, #network, #battery, #tray, #custom-appearance, #custom-dnd {
   margin-left: 3px;
   margin-right: 3px;
   padding-bottom: 5px;
@@ -61,12 +61,6 @@ tooltip label {
   padding-right: 10px;
   background-color: #16161e;
 }
-#memory {
-  color: #e0af68;
-}
-#cpu {
-  color: #7dcfff;
-}
 #clock {
   color: #D19D8A;
   background-color: #1E1A24;
@@ -74,12 +68,6 @@ tooltip label {
 }
 #pulseaudio {
   color: #41a6b5;
-}
-#network {
-  color: #bb9af7;
-}
-#network.disconnected {
-  color: #cbccd1;
 }
 #battery {
   color: #565f89;
@@ -101,9 +89,6 @@ tooltip label {
 }
 #battery.charging {
   color: #bb9af7;
-}
-#privacy {
-  color: #f7768e;
 }
 #custom-appearance {
   color: #bb9af7;

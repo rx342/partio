@@ -10,7 +10,6 @@
     ],
     "modules-right": [
         "tray",
-        "privacy",
         "custom/appearance",
         "custom/dnd",
         "pulseaudio",
@@ -91,14 +90,6 @@
       "format": "{:%a\n%e\n\n■\n\n<b>%H\n%M</b>}",
       "justify": "center"
     },
-    "cpu": {
-      "format": "",
-      "justify": "center"
-    },
-    "memory": {
-      "format": "",
-      "justify": "center"
-    },
     "battery": {
         "states": {
             "warning": 30,
@@ -110,11 +101,5 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""],
         "justify": "center"
-    },
-    "privacy": {
-        "icon-spacing": 4,
-        "icon-size": 14,
-        "transition-duration": 250,
-        "justify": "center"
-    },
+    }
 }
