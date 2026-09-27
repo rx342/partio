@@ -8,6 +8,7 @@
 @define-color battery #565F89;
 @define-color battery-bg #1B1F29;
 @define-color battery-charging #BB9AF7;
+@define-color battery-charging-bg #1F1929;
 @define-color appearance #BB9AF7;
 @define-color dnd #E0AF68;
 @define-color text #D9E0EE;
@@ -103,6 +104,7 @@ tooltip label {
 }
 #battery.charging {
   color: @battery-charging;
+  background-color: @battery-charging-bg;
 }
 #custom-appearance {
   color: @appearance;
