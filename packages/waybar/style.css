@@ -1,6 +1,7 @@
 @define-color bg #16161E;
 @define-color urgent #F7768E;
 @define-color workspace #7AA2F7;
+@define-color workspace-hover #BCD0FB;
 @define-color clock-text #D19D8A;
 @define-color clock-bg #1E1A24;
 @define-color pulseaudio #41A6B5;
@@ -55,7 +56,7 @@ window > box {
   color: @bg;
 }
 #workspaces button:hover {
-  background-color: @bg;
+  background: @workspace-hover;
   color: @bg;
 }
 tooltip {
