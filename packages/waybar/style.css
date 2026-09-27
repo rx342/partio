@@ -1,3 +1,15 @@
+@define-color bg #16161E;
+@define-color urgent #F7768E;
+@define-color workspace #7AA2F7;
+@define-color clock-text #D19D8A;
+@define-color clock-bg #1E1A24;
+@define-color pulseaudio #41A6B5;
+@define-color battery #565F89;
+@define-color battery-charging #BB9AF7;
+@define-color appearance #BB9AF7;
+@define-color dnd #E0AF68;
+@define-color text #D9E0EE;
+
 * {
   font-family: "Maple Mono NF CN";
   font-size: 12pt;
@@ -9,8 +21,8 @@
 }
 @keyframes blink_red {
   to {
-    background-color: #f7768e;
-    color: #1a1b26;
+    background-color: @urgent;
+    color: @bg;
   }
 }
 #workspaces button.urgent, #workspaces button.critical, #workspaces button.urgent {
@@ -21,7 +33,7 @@
   animation-direction: alternate;
 }
 window > box {
-  background-color: #16161e;
+  background-color: @bg;
 }
 #workspaces {
   padding-left: 0px;
@@ -32,25 +44,25 @@ window > box {
   padding-bottom: 5px;
   padding-left: 1px;
   padding-right: 1px;
-  color: #7aa2f7;
+  color: @workspace;
   border-radius: 10px;
 }
 #workspaces button.focused {
-  background-color: #7aa2f7;
-  color: #1a1b26;
+  background-color: @workspace;
+  color: @bg;
 }
 #workspaces button.urgent {
-  color: #1a1b26;
+  color: @bg;
 }
 #workspaces button:hover {
-  background-color: #16161e;
-  color: #1a1b26;
+  background-color: @bg;
+  color: @bg;
 }
 tooltip {
-  background: #16161e;
+  background: @bg;
 }
 tooltip label {
-  color: #d9e0ee;
+  color: @text;
 }
 #clock, #pulseaudio, #network, #battery, #tray, #custom-appearance, #custom-dnd {
   margin-left: 3px;
@@ -59,28 +71,28 @@ tooltip label {
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #16161e;
+  background-color: @bg;
 }
 #clock {
-  color: #D19D8A;
-  background-color: #1E1A24;
+  color: @clock-text;
+  background-color: @clock-bg;
   border-radius: 12px;
 }
 #pulseaudio {
-  color: #41a6b5;
+  color: @pulseaudio;
 }
 #battery {
-  color: #565f89;
+  color: @battery;
   margin-bottom: 5px;
 }
 #battery.discharging {
-  color: #565f89;
+  color: @battery;
 }
 #battery.warning:not(.charging) {
-  color: #f7768e;
+  color: @urgent;
 }
 #battery.critical:not(.charging) {
-  color: #f7768e;
+  color: @urgent;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -88,16 +100,16 @@ tooltip label {
   animation-direction: alternate;
 }
 #battery.charging {
-  color: #bb9af7;
+  color: @battery-charging;
 }
 #custom-appearance {
-  color: #bb9af7;
+  color: @appearance;
 }
 #custom-dnd.available {
-  color: #e0af68;
+  color: @dnd;
 }
 #custom-dnd.busy {
-  color: #f7768e;
+  color: @urgent;
 }
 #tray {
 }
