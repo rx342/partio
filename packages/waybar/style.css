@@ -18,8 +18,6 @@
   font-weight: bold;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 12px;
-  background-color: transparent;
 }
 @keyframes blink_red {
   to {
