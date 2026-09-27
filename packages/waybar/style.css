@@ -6,6 +6,7 @@
 @define-color clock-bg #1E1A24;
 @define-color pulseaudio #41A6B5;
 @define-color battery #565F89;
+@define-color battery-bg #1B1F29;
 @define-color battery-charging #BB9AF7;
 @define-color appearance #BB9AF7;
 @define-color dnd #E0AF68;
@@ -85,6 +86,8 @@ tooltip label {
 #battery {
   color: @battery;
   margin-bottom: 5px;
+  background-color: @battery-bg;
+  border-radius: 30px;
 }
 #battery.discharging {
   color: @battery;
