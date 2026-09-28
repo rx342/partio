@@ -1,5 +1,6 @@
 @define-color bg #16161E;
 @define-color urgent #F7768E;
+@define-color urgent-bg #291516;
 @define-color workspace #7AA2F7;
 @define-color workspace-hover #BCD0FB;
 @define-color clock-text #D19D8A;
@@ -93,9 +94,11 @@ tooltip label {
 }
 #battery.warning:not(.charging) {
   color: @urgent;
+  background-color: @urgent-bg;
 }
 #battery.critical:not(.charging) {
   color: @urgent;
+  background-color: @urgent-bg;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
