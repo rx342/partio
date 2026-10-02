@@ -157,11 +157,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id="nl.jknaapen.fladder"
-    open-fullscreen true
-}
-
-window-rule {
     match app-id="signal"
     match app-id="ferdium"
     match app-id="org.gnome.Nautilus"
@@ -342,7 +337,7 @@ binds {
 
     Mod+F8 hotkey-overlay-title="Turn on/off eDP-1" { spawn-sh "niri msg outputs | grep -n2 eDP | grep -q Disabled && { echo off; niri msg output eDP-1 on; } || { echo on; niri msg output eDP-1 off; }"; }
 
-    Mod+E { spawn "niri-dynamic-cast";  }
+    Mod+E { spawn "niri-dynamic-cast"; }
 
     Mod+Shift+E { quit; }
 }
