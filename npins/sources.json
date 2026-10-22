@@ -4,8 +4,8 @@
       "type": "Channel",
       "name": "nixpkgs-unstable",
       "artifact": "nixexprs.tar.xz",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1089329.ca1659429c95/nixexprs.tar.xz",
-      "hash": "sha256-Xdc4viyLXXA3qos9fo2Ezb+JxRasKk99tSasmSAdnSc="
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1097770.5adc50831c25/nixexprs.tar.xz",
+      "hash": "sha256-hVMDyAXU0kxRuG3GygbZkzf5x+aBNEC0NYEJ6KwHtD4="
     },
     "nu_scripts": {
       "type": "Git",
@@ -16,9 +16,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "3157208885c6f4c39ec016265ddae00160ae860b",
-      "url": "https://github.com/nushell/nu_scripts/archive/3157208885c6f4c39ec016265ddae00160ae860b.tar.gz",
-      "hash": "sha256-FpRpjPoWvXA0xeqKiCpM6SPDSzGE3JbYDZ1DFc2IDEE="
+      "revision": "f5bc4cd7461af51a2faea25b9691d36694147500",
+      "url": "https://github.com/nushell/nu_scripts/archive/f5bc4cd7461af51a2faea25b9691d36694147500.tar.gz",
+      "hash": "sha256-csOlHrWnDXBSDdgK/5YaWFn0Abku6l4mNgqlyywEOS4="
     },
     "nvim-rx": {
       "type": "Git",
@@ -29,9 +29,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "f0481c3a3526bf526973d07794d04cdba032b343",
-      "url": "https://github.com/rx342/nvim/archive/f0481c3a3526bf526973d07794d04cdba032b343.tar.gz",
-      "hash": "sha256-XAsmFpMD+T+mhYBkm16rmCuIAJREhZjk7YmI0+kopko="
+      "revision": "c0e142a3813c12660c1bfed5b960b4ba9de2011e",
+      "url": "https://github.com/rx342/nvim/archive/c0e142a3813c12660c1bfed5b960b4ba9de2011e.tar.gz",
+      "hash": "sha256-4Rjlcx8FYmQE9/aArl8H7T9ySjAobjAvH75WPAO5BDg="
     },
     "wrapper-manager": {
       "type": "Git",
