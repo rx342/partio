@@ -7,8 +7,8 @@ This is a subset of my dotfiles that serves two purposes:
 - I do not want to share all of my dotfiles since I may leak secrets, but still want to share some stuff
 - I can use this as a portable config: since everything is wrapped I can just invoke it with `nix` and have my minimal config really quickly
 
-> [!NOTE]
-> This repository uses `nix` to wrap everything into a single package but if you just want to check the configuration files for each of them they are defined [here](./packages).
+> [!TIP]
+> This repository uses `nix` to wrap everything into a single package but if you just want to check the configuration files for each of them they are defined in [`./packages`](./packages).
 
 ## Usage
 
