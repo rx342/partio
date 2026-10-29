@@ -1,5 +1,5 @@
 let fish_completer = {|spans|
-  fish --command $"complete '--do-complete=($spans | str replace --all "'" "\\'" | str join ' ')'"
+    fish --command $"complete '--do-complete=($spans | str replace --all "'" "\\'" | str join ' ')'"
     | from tsv --flexible --noheaders --no-infer
     | rename value description
     | update value {|row|
@@ -13,10 +13,7 @@ let fish_completer = {|spans|
 }
 
 $env.config = {
-  completions: {
-    external: {
-      enable: true
-      completer: $fish_completer
+    completions: {
+        external: {enable: true, completer: $fish_completer}
     }
-  }
 }

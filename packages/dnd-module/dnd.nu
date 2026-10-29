@@ -1,7 +1,7 @@
 #!/usr/bin/env nu
 
-def get_mode [ current_mode: string, num_notifications: int ] {
-    if ($current_mode == "true") {
+def get_mode [current_mode: string, num_notifications: int] {
+    if $current_mode == "true" {
         let icon_base = ""
         let icon = if $num_notifications > 0 {
             $"($icon_base)"
@@ -22,7 +22,7 @@ def get_mode [ current_mode: string, num_notifications: int ] {
     }
 }
 
-def toggle_mode [ current_mode: string ] {
+def toggle_mode [current_mode: string] {
     swaync-client --toggle-dnd
 }
 
