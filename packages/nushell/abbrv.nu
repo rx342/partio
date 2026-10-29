@@ -27,7 +27,6 @@ $env.config.abbreviations = {
   rm: "rm -i",
   rs: "rsync --archive --hard-links --verbose --info=progress2",
   s: "ssh",
-  t: "tmux",
   v: "nvim -R",
   view: "nvim -R",
   vimdiff: "nvim -d",

@@ -11,7 +11,6 @@ let
         ../packages/zk/default.nix
         ../packages/eza/default.nix
         ../packages/git/default.nix
-        ../packages/tmux/default.nix
         ../packages/fish/default.nix
         ../packages/nushell/default.nix
         ../packages/sioyek/default.nix
@@ -38,7 +37,6 @@ in
     zk = wrapped-with-pkgs.config.wrappers.zk.wrapped;
     eza = wrapped-with-pkgs.config.wrappers.eza.wrapped;
     git = wrapped-with-pkgs.config.wrappers.git.wrapped;
-    tmux = wrapped-with-pkgs.config.wrappers.tmux.wrapped;
     fish = wrapped-with-pkgs.config.wrappers.fish.wrapped;
     nushell = wrapped-with-pkgs.config.wrappers.nushell.wrapped;
     sioyek = wrapped-with-pkgs.config.wrappers.sioyek.wrapped;

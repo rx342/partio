@@ -24,7 +24,6 @@ pkgs.lib.makeScope pkgs.newScope (final: {
         rx342.bat
         rx342.git
         rx342.eza
-        rx342.tmux
         rx342.neovim
         rx342.yazi
         nix-output-monitor
