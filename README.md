@@ -75,7 +75,7 @@ nix = {
 
 ## Memoria
 
-[memoria](./memoria) directory contains all my previous 🍙 with a command to spawn a virtual machine.
+[`./memoria`](./memoria) directory contains all my previous 🍙 with a command to spawn a virtual machine.
 
 ## Install ISO
 
