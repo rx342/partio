@@ -52,7 +52,7 @@ and install packages
 environment.systemPackages = with pkgs.rx342; [
   fish
   yazi
-  ghostty
+  wezterm
 ];
 ```
 

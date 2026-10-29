@@ -18,7 +18,6 @@ let
         ../packages/mpv/default.nix
         ../packages/yt-dlp/default.nix
         ../packages/feh/default.nix
-        ../packages/ghostty/default.nix
         ../packages/wezterm/default.nix
         ../packages/waybar/default.nix
         ../packages/swaylock/default.nix
@@ -46,7 +45,6 @@ in
     mpv = wrapped-with-pkgs.config.wrappers.mpv.wrapped;
     yt-dlp = wrapped-with-pkgs.config.wrappers.yt-dlp.wrapped;
     feh = wrapped-with-pkgs.config.wrappers.feh.wrapped;
-    ghostty = wrapped-with-pkgs.config.wrappers.ghostty.wrapped;
     wezterm = wrapped-with-pkgs.config.wrappers.wezterm.wrapped;
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
