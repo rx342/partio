@@ -85,10 +85,12 @@ in
   services.avahi = {
     enable = true;
     nssmdns4 = true;
-    publish = {
-      enable = true;
-      addresses = true;
-      workstation = true;
+    settings = {
+      publish = {
+        disable-publishing = false;
+        publish-addresses = true;
+        publish-workstation = true;
+      };
     };
   };
 
@@ -112,6 +114,7 @@ in
   boot.loader.systemd-boot.enable = false;
   boot.loader.grub.enable = false;
   boot.loader.efi.canTouchEfiVariables = false;
+  boot.zfs.forceImportRoot = true;
 
   system.switch.enable = false;
   system.installer.channel.enable = false;
