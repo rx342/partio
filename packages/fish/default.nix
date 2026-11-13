@@ -30,7 +30,6 @@ let
           source ${./interactive.fish}
           source ${./env.fish}
           source ${./aliases.fish}
-          source ${./ssh-agent.fish}
 
           fzf --fish | source
 
