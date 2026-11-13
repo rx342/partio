@@ -4,6 +4,7 @@ local config = wezterm.config_builder()
 
 config.term = "wezterm"
 config.default_prog = { "fish", "-l" }
+config.mux_enable_ssh_agent = false
 
 config.font = wezterm.font("Maple Mono NF CN")
 config.font_size = 18
