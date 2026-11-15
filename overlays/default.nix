@@ -19,6 +19,7 @@ let
         ../packages/feh/default.nix
         ../packages/wezterm/default.nix
         ../packages/waybar/default.nix
+        ../packages/noctalia/default.nix
         ../packages/swaylock/default.nix
         ../packages/fcitx5/default.nix
         ../packages/niri/default.nix
@@ -45,6 +46,7 @@ in
     feh = wrapped-with-pkgs.config.wrappers.feh.wrapped;
     wezterm = wrapped-with-pkgs.config.wrappers.wezterm.wrapped;
     waybar = wrapped-with-pkgs.config.wrappers.waybar.wrapped;
+    noctalia = wrapped-with-pkgs.config.wrappers.noctalia.wrapped;
     swaylock = wrapped-with-pkgs.config.wrappers.swaylock.wrapped;
     fcitx5 = wrapped-with-pkgs.config.wrappers.fcitx5.wrapped;
     niri = wrapped-with-pkgs.config.wrappers.niri.wrapped;

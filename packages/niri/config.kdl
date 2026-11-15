@@ -121,13 +121,11 @@ gestures {
 }
 
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "waybar"
-spawn-sh-at-startup "swaybg -i ~/.local/share/wallpapers/home.png -m fill"
+spawn-at-startup "noctalia"
 spawn-sh-at-startup "signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-sh-at-startup "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"
 spawn-at-startup "helium"
 spawn-at-startup "wezterm"
-spawn-at-startup "vicinae" "server"
 
 hotkey-overlay {
     skip-at-startup
@@ -200,7 +198,6 @@ window-rule {
 
 window-rule {
     match app-id="org.wezfurlong.wezterm"
-    match app-id="vicinae"
     match app-id="org.gnome.Nautilus"
     match app-id="signal"
     match app-id="ferdium"
@@ -212,11 +209,9 @@ window-rule {
     }
 }
 
-layer-rule {
-    match namespace="vicinae"
-    background-effect {
-        blur true
-    }
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
 }
 
 layer-rule {
@@ -232,36 +227,36 @@ layer-rule {
 
 layer-rule {
     match namespace="^wallpaper$"
+    match namespace="^noctalia-wallpaper"
     place-within-backdrop true
 }
 
 layer-rule {
     match namespace="swaync-notification-window"
     match namespace="swaync-control-center"
-    match namespace="vicinae"
     block-out-from "screencast"
 }
 
 binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
-    Mod+D hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
-    Mod+O hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f"; }
+    Mod+D hotkey-overlay-title="Run an Application" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+O hotkey-overlay-title="Lock the Screen" { spawn-sh "noctalia msg session lock"; }
+    Mod+Shift+O hotkey-overlay-title="Lock the Screen and suspend" { spawn-sh "noctalia msg session lock-and-suspend"; }
     Mod+I hotkey-overlay-title="Internet browser" { spawn "helium"; }
     Mod+U hotkey-overlay-title="Private Internet browser" { spawn-sh "helium --incognito"; }
-    Mod+A hotkey-overlay-title="swaync" { spawn-sh "swaync-client -t -sw"; }
-    Mod+Space hotkey-overlay-title="Dismiss notifications" { spawn-sh "swaync-client -C"; }
+    Mod+Space hotkey-overlay-title="Dismiss notifications" { spawn-sh "noctalia msg notification-clear-active"; }
     Mod+N hotkey-overlay-title="File browser" { spawn "nautilus"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pamixer -i 3"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "pamixer -d 3"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "pamixer --toggle-mute"; }
     XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
 
     Super+Q repeat=false { close-window; }
     Super+Shift+Q repeat=false { spawn "niri-kill-focused"; }
@@ -340,4 +335,10 @@ binds {
     Mod+E { spawn "niri-dynamic-cast"; }
 
     Mod+Shift+E { quit; }
+}
+
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
 }

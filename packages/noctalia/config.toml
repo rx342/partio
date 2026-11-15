@@ -1,0 +1,27 @@
+config_version = 20
+
+[bar.default]
+position = "left"
+start = ["workspaces"]
+center = ["clock"]
+end = ["tray", "notifications", "volume", "brightness", "battery"]
+thickness = 45
+scale = 1.25
+font_family = "Maple Mono NF CN"
+
+[widget.workspaces]
+show_labels = false
+
+[shell]
+telemetry_enabled = false
+
+[theme]
+source = "custom"
+custom_palette = "custom-tokyo-night"
+mode = "auto"
+
+[wallpaper]
+enabled = true
+
+[wallpaper.default]
+path = "~/.local/share/wallpapers/home.png"
