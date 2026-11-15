@@ -2,10 +2,10 @@ config_version = 20
 
 [bar.default]
 position = "left"
-start = ["workspaces", "privacy"]
+start = ["workspaces", "privacy", "media", "audio_visualizer"]
 center = ["clock"]
-end = ["tray", "network", "bluetooth", "notifications", "volume", "brightness", "battery"]
-thickness = 45
+end = ["tray", "network", "notifications", "volume", "brightness", "battery"]
+thickness = 60
 scale = 1.25
 font_family = "Maple Mono NF CN"
 
@@ -18,6 +18,22 @@ colorize_icons = false
 drawer = true
 hidden = ["nm-applet", "blueman"]
 
+[widget.clock]
+format = "{:%a:%e}\n\n{:%H:%M}"
+color = "#D19D8A"
+
+[widget.network]
+color = "#7AA2F7"
+
+[widget.notifications]
+color = "#E0AF68"
+
+[widget.volume]
+color = "#41A6B5"
+
+[widget.battery]
+color = "#BB9AF7"
+
 [shell]
 telemetry_enabled = false
 
@@ -26,8 +42,15 @@ source = "custom"
 custom_palette = "custom-tokyo-night"
 mode = "auto"
 
+[notification]
+enable_daemon = true
+position = "bottom_right"
+
 [wallpaper]
 enabled = true
 
 [wallpaper.default]
 path = "~/.local/share/wallpapers/home.png"
+
+[weather]
+enabled = false

@@ -238,10 +238,11 @@ layer-rule {
 }
 
 binds {
-    Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "wezterm"; }
     Mod+D hotkey-overlay-title="Run an Application" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+O hotkey-overlay-title="Lock the Screen" { spawn-sh "noctalia msg session lock"; }
     Mod+Shift+O hotkey-overlay-title="Lock the Screen and suspend" { spawn-sh "noctalia msg session lock-and-suspend"; }
+    Mod+A hotkey-overlay-title="Show notifications" { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
     Mod+I hotkey-overlay-title="Internet browser" { spawn "helium"; }
     Mod+U hotkey-overlay-title="Private Internet browser" { spawn-sh "helium --incognito"; }
     Mod+Space hotkey-overlay-title="Dismiss notifications" { spawn-sh "noctalia msg notification-clear-active"; }
