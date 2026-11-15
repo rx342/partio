@@ -2,15 +2,21 @@ config_version = 20
 
 [bar.default]
 position = "left"
-start = ["workspaces"]
+start = ["workspaces", "privacy"]
 center = ["clock"]
-end = ["tray", "notifications", "volume", "brightness", "battery"]
+end = ["tray", "network", "bluetooth", "notifications", "volume", "brightness", "battery"]
 thickness = 45
 scale = 1.25
 font_family = "Maple Mono NF CN"
 
 [widget.workspaces]
 show_labels = false
+hide_when_empty = true
+
+[widget.tray]
+colorize_icons = false
+drawer = true
+hidden = ["nm-applet", "blueman"]
 
 [shell]
 telemetry_enabled = false
