@@ -20,7 +20,8 @@ hidden = ["nm-applet", "blueman"]
 
 [widget.clock]
 format = "{:%a:%e}\n\n{:%H:%M}"
-color = "#D19D8A"
+color = "tertiary"
+font_weight = 700
 
 [widget.network]
 color = "#7AA2F7"

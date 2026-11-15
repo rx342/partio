@@ -4,7 +4,7 @@
     "mOnPrimary": "#16161e",
     "mSecondary": "#bb9af7",
     "mOnSecondary": "#16161e",
-    "mTertiary": "#9ece6a",
+    "mTertiary": "#D19D8A",
     "mOnTertiary": "#16161e",
     "mError": "#f7768e",
     "mOnError": "#16161e",
@@ -14,7 +14,7 @@
     "mOnSurfaceVariant": "#9aa5ce",
     "mOutline": "#353D57",
     "mShadow": "#15161e",
-    "mHover": "#9ece6a",
+    "mHover": "#D19D8A",
     "mOnHover": "#16161e",
     "terminal": {
       "normal": {
