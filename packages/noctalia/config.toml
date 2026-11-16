@@ -24,15 +24,18 @@ font_weight = 700
 
 [widget.network]
 color = "#7AA2F7"
+peek = true
 
 [widget.notifications]
 color = "#E0AF68"
 
 [widget.volume]
+peek = true
 color = "#41A6B5"
 
 [widget.battery]
 color = "#BB9AF7"
+peek = true
 
 [shell]
 telemetry_enabled = false
