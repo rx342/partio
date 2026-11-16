@@ -16,10 +16,9 @@ hide_when_empty = true
 [widget.tray]
 colorize_icons = false
 drawer = true
-hidden = ["nm-applet", "blueman"]
 
 [widget.clock]
-format = "{:%a:%e}\n\n{:%H:%M}"
+format = "{:%a\n%e}\n\n{:%H:%M}"
 color = "tertiary"
 font_weight = 700
 
