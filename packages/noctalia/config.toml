@@ -105,3 +105,9 @@ rotation = 0.0
 
 [lockscreen_widgets.widget.clock.settings]
 background_opacity = 0.0
+
+[weather]
+enabled = false
+
+[control_center.calendar]
+show_events_card = false
