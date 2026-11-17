@@ -1,8 +1,11 @@
 { pkgs, lib, ... }:
 
+let
+  noctalia = import (import ../../npins).noctalia { inherit pkgs; };
+in
 {
   wrappers.noctalia = {
-    basePackage = pkgs.noctalia;
+    basePackage = noctalia.package;
     overrideAttrs = old: {
       pname = "${old.pname}-rx342";
     };

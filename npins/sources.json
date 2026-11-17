@@ -8,17 +8,20 @@
       "hash": "sha256-BszPqU/Au5mm0nQIDUMnsksh6hgIp7iyaX/UBcuRa0c="
     },
     "noctalia": {
-      "type": "Git",
+      "type": "GitRelease",
       "repository": {
         "type": "GitHub",
         "owner": "noctalia-dev",
         "repo": "noctalia"
       },
-      "branch": "main",
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
       "submodules": false,
-      "revision": "6bcea5968d17b7750e27f19f1827dce1a31bbc98",
-      "url": "https://github.com/noctalia-dev/noctalia/archive/6bcea5968d17b7750e27f19f1827dce1a31bbc98.tar.gz",
-      "hash": "sha256-6EGCdWl0tApK8PsKq1RN6iI02aW6eQHhi16MA3YFlHc="
+      "version": "v5.5.0",
+      "revision": "89059f62172effcb924cf29930b3435301ca2aac",
+      "url": "https://api.github.com/repos/noctalia-dev/noctalia/tarball/refs/tags/v5.5.0",
+      "hash": "sha256-JFT5v+NFN6j/5nDZ5oKizflUsGJNMvwCOdt+4zZ0IX8="
     },
     "nu_scripts": {
       "type": "Git",
