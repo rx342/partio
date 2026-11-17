@@ -2,16 +2,26 @@ config_version = 20
 
 [bar.default]
 position = "left"
-start = ["workspaces", "privacy", "media", "audio_visualizer"]
+start = ["workspaces", "media", "audio_visualizer"]
 center = ["clock"]
-end = ["tray", "network", "notifications", "volume", "brightness", "battery"]
+end = ["tray", "privacy", "network", "notifications", "volume", "brightness", "battery"]
 thickness = 60
 scale = 1.25
 font_family = "Maple Mono NF CN"
+radius_top_left = 0
+radius_top_right = 20
+radius_bottom_left = 0
+radius_bottom_right = 20
+margin_ends = 0
 
 [widget.workspaces]
 show_labels = false
 hide_when_empty = true
+show_tooltip = false
+
+[widget.audio_visualizer]
+color_1 = "tertiary"
+color_2 = "secondary"
 
 [widget.tray]
 drawer = true
@@ -23,12 +33,14 @@ font_weight = 700
 
 [widget.network]
 color = "#7AA2F7"
+peek = true
 
 [widget.notifications]
 color = "#E0AF68"
 
 [widget.volume]
 color = "#41A6B5"
+peek = true
 
 [widget.battery]
 color = "#BB9AF7"
