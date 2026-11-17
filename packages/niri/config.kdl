@@ -144,7 +144,7 @@ animations {
 }
 
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 20
     clip-to-geometry true
     draw-border-with-background false
 }
