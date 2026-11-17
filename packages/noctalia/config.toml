@@ -71,55 +71,12 @@ enabled = true
 [wallpaper.default]
 path = "~/.local/share/wallpapers/home.png"
 
-[lockscreen]
-transition = [ "fade" ]
-
-[lockscreen_widgets]
-enabled = true
-schema_version = 2
-
-[lockscreen_widgets.widget.login_box]
-type = "login_box"
-box_height = 70.0
-box_width = 400.0
-cx = 960.0
-cy = 825.0
-placement_height = 1080.0
-placement_width = 1920.0
-rotation = 0.0
-
-[lockscreen_widgets.widget.login_box.settings]
-background_color = "on_primary"
-background_opacity = 0.80
-background_radius = 12.0
-center_password_text = true
-input_opacity = 1.0
-input_radius = 6.0
-layout = "compact"
-show_caps_lock = true
-show_keyboard_layout = true
-show_login_button = false
-show_media = true
-show_password_reveal = false
-show_session_buttons = false
-show_unlock_hint = false
-show_weather = false
-
-[lockscreen_widgets.widget.clock]
-type = "clock"
-box_height = 309.1484375
-box_width = 625.12109375
-cx = 960.0
-cy = 417.42578125
-placement_height = 1080.0
-placement_width = 1920.0
-rotation = 0.0
-
-[lockscreen_widgets.widget.clock.settings]
-background_opacity = 0.0
-
 [weather]
 enabled = false
 
 [control_center.calendar]
 show_events_card = false
+
+[lockscreen]
+transition = [ "fade" ]
+tint_intensity = 0.15
