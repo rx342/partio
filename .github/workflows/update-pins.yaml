@@ -44,6 +44,7 @@ jobs:
         id: pr
         with:
           title: "chore: update npins"
+          committer: "xr243[bot] <223822455+xr243[bot]@users.noreply.github.com>"
           commit-message: "chore: update npins"
           body: "Automated `npins` update."
           branch: update-npins
