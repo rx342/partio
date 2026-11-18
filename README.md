@@ -28,6 +28,13 @@ It will put you in a shell with my minimal config targeted for servers (_i.e._ n
 > [!WARNING]
 > Recall that it is **personal**: it has some very opinionated options and should only be used temporarily (unless you want to have my identity, _e.g._ my git name & email, and other things on your computer).
 
+> [!TIP]
+> You can run my [`nvim`](https://neovim.io/) config only with
+>
+> ```bash
+> nix run github:rx342/partio#nvim
+> ```
+
 ### Overlay
 
 This repository also exposes all wrapped packages so you can pull them easily via an overlay.
