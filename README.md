@@ -87,8 +87,8 @@ Please refer to the `justfile` recipes under the group `iso`.
 
 ## Credits
 
-- [viperML/wrapper-manager](https://github.com/viperML/wrapper-manager)
-- [viperML/dotfiles](https://github.com/viperML/dotfiles)
+- [viperML/wrapper-manager](https://codeberg.org/viperML/wrapper-manager)
+- [viperML/dotfiles](https://codeberg.org/viperML/dotfiles)
 - [sioodmy/andromeda](https://github.com/sioodmy/andromeda/tree/main)
 - [ifd3f/infra](https://github.com/ifd3f/infra)
 - [isabelroses/dotfiles](https://github.com/isabelroses/dotfiles)
