@@ -1,5 +1,18 @@
 {
   "pins": {
+    "mnw": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Gerg-L",
+        "repo": "mnw"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "a582dbedf7c8ec7effa6939ac5bdd23b27267d1b",
+      "url": "https://github.com/Gerg-L/mnw/archive/a582dbedf7c8ec7effa6939ac5bdd23b27267d1b.tar.gz",
+      "hash": "sha256-6IWPAMEotKY/nQvs1kU6qwMwCXTeW5HlOhw2RwFHFdI="
+    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",

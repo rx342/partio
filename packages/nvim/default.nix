@@ -1,7 +1,12 @@
 {
   system ? builtins.currentSystem,
   source ? import ../../npins,
-  nvim-rx ? import source.nvim-rx { inherit system; },
+  pkgs ? import source.nixpkgs {
+    overlays = [ ];
+    config = { };
+    inherit system;
+  },
+  mnw ? import source.mnw,
 }:
 
-nvim-rx.nvim
+pkgs.callPackage ./packages/nvim.nix { inherit mnw; }

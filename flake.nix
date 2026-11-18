@@ -11,6 +11,7 @@
       packages.${system} = {
         inherit (partio) partio;
         default = self.packages.${system}.partio;
+        nvim = import ./packages/nvim/default.nix { inherit system; };
       };
 
       inherit (partio) overlays;

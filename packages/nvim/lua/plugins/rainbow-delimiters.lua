@@ -1,0 +1,1 @@
+return { "rainbow-delimiters.nvim" }
