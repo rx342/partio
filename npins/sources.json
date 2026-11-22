@@ -31,10 +31,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v5.5.0",
-      "revision": "89059f62172effcb924cf29930b3435301ca2aac",
-      "url": "https://api.github.com/repos/noctalia-dev/noctalia/tarball/refs/tags/v5.5.0",
-      "hash": "sha256-JFT5v+NFN6j/5nDZ5oKizflUsGJNMvwCOdt+4zZ0IX8="
+      "version": "v5.6.0",
+      "revision": "29c2209467d339a6456515593b26103fad33bd6c",
+      "url": "https://api.github.com/repos/noctalia-dev/noctalia/tarball/refs/tags/v5.6.0",
+      "hash": "sha256-3Bt4df3TM7shQGxQbSDBjYk74oemNvRl4KT3DmLZGF4="
     },
     "nu_scripts": {
       "type": "Git",
