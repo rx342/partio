@@ -79,4 +79,5 @@ show_events_card = false
 
 [lockscreen]
 transition = [ "fade" ]
+transition_duration = 300
 tint_intensity = 0.15
