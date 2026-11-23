@@ -67,6 +67,22 @@ mode = "auto"
 [notification]
 enable_daemon = true
 position = "bottom_right"
+scale = 0.9
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "mic_mute"
+
+[[control_center.shortcuts]]
+type = "dark_mode"
 
 [wallpaper]
 enabled = true
