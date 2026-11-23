@@ -1,5 +1,8 @@
 config_version = 20
 
+[accessibility]
+ui_scale = 1.2
+
 [bar.default]
 position = "left"
 start = ["workspaces", "media", "audio_visualizer"]
@@ -81,3 +84,6 @@ show_events_card = false
 transition = [ "fade" ]
 transition_duration = 300
 tint_intensity = 0.15
+
+[desktop_widgets]
+enabled = false
