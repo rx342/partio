@@ -36,14 +36,18 @@ pkgs.lib.makeScope pkgs.newScope (final: {
         direnv
       ];
     };
+
   overlays = {
     default = import ./overlays/default.nix;
   };
-  shell = pkgs.mkShellNoCC {
-    packages = with pkgs; [
-      caligula
-      just
-      qemu
-    ];
+
+  shell = {
+    default = pkgs.mkShellNoCC {
+      packages = with pkgs; [
+        caligula
+        just
+        qemu
+      ];
+    };
   };
 })
