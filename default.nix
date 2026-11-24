@@ -49,5 +49,12 @@ pkgs.lib.makeScope pkgs.newScope (final: {
         qemu
       ];
     };
+
+    ci = pkgs.mkShellNoCC {
+      packages = with pkgs; [
+        npins
+        just
+      ];
+    };
   };
 })
