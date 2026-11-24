@@ -1,1 +1,1 @@
-(import ./. { }).shell.default
+(import ./. { }).shells.default

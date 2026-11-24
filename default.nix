@@ -41,7 +41,7 @@ pkgs.lib.makeScope pkgs.newScope (final: {
     default = import ./overlays/default.nix;
   };
 
-  shell = {
+  shells = {
     default = pkgs.mkShellNoCC {
       packages = with pkgs; [
         caligula
