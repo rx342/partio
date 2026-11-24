@@ -26,12 +26,15 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_unconfined=0
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
+      - name: Install tools
+        run: nix-env --file ./default.nix --install --attr shells.ci.nativeBuildInputs
+
       - name: Update npins
         run: |
-          nix-shell -p npins --run "npins upgrade"
-          nix-shell -p npins --run "npins update"
-          nix-shell -p npins --run "npins --lock-file ./packages/nvim/packages/start.json update"
-          nix-shell -p npins --run "npins --lock-file ./packages/nvim/packages/opt.json update"
+          npins upgrade
+          npins update
+          npins --lock-file ./packages/nvim/packages/start.json update
+          npins --lock-file ./packages/nvim/packages/opt.json update
 
       - name: Set bot
         uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0

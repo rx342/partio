@@ -30,5 +30,8 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_unconfined=0
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
+      - name: Install tools
+        run: nix-env --file ./default.nix --install --attr shells.ci.nativeBuildInputs
+
       - name: Build all packages
-        run: nix-shell -p just --run "just build-all"
+        run: just build-all

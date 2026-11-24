@@ -48,8 +48,11 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_unconfined=0
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
+      - name: Install tools
+        run: nix-env --file ./default.nix --install --attr shells.ci.nativeBuildInputs
+
       - name: Build iso
-        run: nix-shell -p just --run "just create"
+        run: just create
 
       - name: Make release
         if: github.event_name != 'pull_request'
